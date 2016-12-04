@@ -1,0 +1,358 @@
+.blog-slides{
+  @include dflex(r,sb,s);
+  flex-wrap: wrap;
+  width: 80%;
+
+  margin-top: 1rem;
+  >div{
+    width: 33%;
+    margin-bottom: 1.9rem;
+  }
+  img{
+    height: 13.2rem;
+  }
+  h6{
+    font-family: "Proxima Nova Regular";
+    font-weight: 100;
+    font-size: 2.2rem;
+    color: rgb(15,152,233);
+    margin: 0;
+    margin-top: 1.8rem;
+  }
+  p{
+    font-family: "Proxima Nova Regular";
+    font-size: 0.8rem;
+    width: 90%;
+    color: rgb(107,121,133);
+    &:last-of-type{
+      margin-top: 2.7rem;
+      color: rgb(33,33,33);
+    }
+  }
+}
+
+#pages{
+  @include dflex(r,sb,c);
+  width: 80%;
+
+  margin-top: 5.3rem;
+  margin-bottom: 7.5rem;
+
+  padding-top: 3rem;
+
+  border-top: 0.1rem solid rgb(235,235,235);
+  >div{
+    @include dflex(r,c,c);
+    p{
+      font-size: 0.8rem;
+      margin: auto 1rem;
+    }
+  }
+  i{
+    text-align: center;
+    font-size: 1rem;
+  }
+  button {
+    @include dflex(r,sb,c);
+    font-family: "Proxima Nova Bold";
+    background-color: rgb(255,255,255);
+    font-size: 0.85rem;
+    color: rgb(15, 152, 233);
+    border: 0.05rem solid rgb(235,235,235);
+    border-radius: 0.3rem;
+
+    padding: 1rem;
+    width: 5.5rem;
+  }
+}
+
+@media (min-width: 0) and (max-width: $xs-adapt){
+  .blog-slides{
+    @include dflex(c,c,c);
+    flex-wrap: wrap;
+    width: 80%;
+
+    margin-top: 1rem;
+    >div{
+      width: 95%;
+      margin-bottom: 1.9rem;
+    }
+    img{
+      height: 40.2rem;
+    }
+    h6{
+      font-family: "Proxima Nova Regular";
+      font-weight: 100;
+      font-size: 4rem;
+      color: rgb(15,152,233);
+      margin: 0;
+      margin-top: 1.8rem;
+    }
+    p{
+      font-family: "Proxima Nova Regular";
+      font-size: 3.2rem;
+      width: 90%;
+      color: rgb(107,121,133);
+      &:last-of-type{
+        margin-top: 2.7rem;
+        color: rgb(33,33,33);
+      }
+    }
+  }
+
+  #pages{
+    @include dflex(r,sb,c);
+    width: 80%;
+
+    margin-top: 5.3rem;
+    margin-bottom: 7.5rem;
+
+    padding-top: 3rem;
+
+    border-top: 0.1rem solid rgb(235,235,235);
+    >div{
+      @include dflex(r,c,c);
+      p{
+        font-size: 2.8rem;
+        margin: auto 1rem;
+      }
+    }
+    i{
+      text-align: center;
+      font-size: 3.2rem;
+    }
+    button {
+      @include dflex(r,sb,c);
+      font-family: "Proxima Nova Bold";
+      background-color: rgb(255,255,255);
+      font-size: 2.2rem;
+      color: rgb(15, 152, 233);
+      border: 0.05rem solid rgb(235,235,235);
+      border-radius: 0.3rem;
+
+      padding: 1rem 2rem;
+      width: 12.5rem;
+      text{
+        margin-top:0.5rem;
+      }
+    }
+  }
+}
+
+@media (min-width: $xs-adapt) and (max-width: $s-adapt - 1){
+  .blog-slides{
+    @include dflex(c,c,c);
+    flex-wrap: wrap;
+    width: 80%;
+
+    margin-top: 1rem;
+    >div{
+      width: 95%;
+      margin-bottom: 1.9rem;
+    }
+    img{
+      height: 28.2rem;
+      margin-left: 4rem;
+    }
+    h6{
+      font-family: "Proxima Nova Regular";
+      font-weight: 100;
+
+      font-size: 3rem;
+      color: rgb(15,152,233);
+      margin: 0;
+      margin-left: 4rem;
+      margin-top: 1.8rem;
+    }
+    p{
+      font-family: "Proxima Nova Regular";
+      font-size: 2.2rem;
+      width: 90%;
+      color: rgb(107,121,133);
+      &:last-of-type{
+        margin-top: 2.7rem;
+        color: rgb(33,33,33);
+      }
+    }
+  }
+
+  #pages{
+    @include dflex(r,sb,c);
+    width: 80%;
+
+    margin-top: 5.3rem;
+    margin-bottom: 7.5rem;
+
+    padding-top: 3rem;
+
+    border-top: 0.1rem solid rgb(235,235,235);
+    >div{
+      @include dflex(r,c,c);
+      p{
+        font-size: 2.8rem;
+        margin: auto 1rem;
+      }
+    }
+    i{
+      text-align: center;
+      font-size: 3.2rem;
+    }
+    button {
+      @include dflex(r,sb,c);
+      font-family: "Proxima Nova Bold";
+      background-color: rgb(255,255,255);
+      font-size: 2.2rem;
+      color: rgb(15, 152, 233);
+      border: 0.05rem solid rgb(235,235,235);
+      border-radius: 0.3rem;
+
+      padding: 1rem 2rem;
+      width: 12.5rem;
+      text{
+        margin-top:0.5rem;
+      }
+    }
+  }
+}
+
+@media (min-width: $s-adapt) and (max-width: $m-adapt - 1) {
+  .blog-slides{
+    @include dflex(r,c,s);
+    flex-wrap: wrap;
+    width: 80%;
+
+    margin-top: 1rem;
+    >div{
+      width: 40%;
+      margin: 2rem;
+      overflow: hidden;
+    }
+    img{
+      height: 20.2rem;
+    }
+    h6{
+      font-family: "Proxima Nova Regular";
+      font-weight: 100;
+      font-size: 2.4rem;
+      color: rgb(15,152,233);
+      margin: 0;
+      margin-top: 1.8rem;
+    }
+    p{
+      font-family: "Proxima Nova Regular";
+      font-size: 1.8rem;
+      width: 90%;
+      color: rgb(107,121,133);
+      &:last-of-type{
+        margin-top: 2.7rem;
+        color: rgb(33,33,33);
+      }
+    }
+  }
+
+  #pages{
+    @include dflex(r,sb,c);
+    width: 80%;
+
+    margin-top: 5.3rem;
+    margin-bottom: 7.5rem;
+
+    padding-top: 3rem;
+
+    border-top: 0.1rem solid rgb(235,235,235);
+    >div{
+      @include dflex(r,c,c);
+      p{
+        font-size: 1.8rem;
+        margin: auto 1rem;
+      }
+    }
+    i{
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 0.4rem;
+    }
+    button {
+      @include dflex(r,sb,c);
+      font-family: "Proxima Nova Bold";
+      background-color: rgb(255,255,255);
+      font-size: 1.85rem;
+      color: rgb(15, 152, 233);
+      border: 0.05rem solid rgb(235,235,235);
+      border-radius: 0.3rem;
+
+      padding: 1rem;
+      width: 8.5rem;
+    }
+  }
+}
+
+@media (min-width: $m-adapt) and (max-width: $l-adapt - 1) {
+  .blog-slides{
+    @include dflex(r,sb,s);
+    flex-wrap: wrap;
+    width: 80%;
+
+    margin-top: 1rem;
+    >div{
+      width: 33%;
+      margin-bottom: 1.9rem;
+    }
+    img{
+      height: 13.2rem;
+    }
+    h6{
+      font-family: "Proxima Nova Regular";
+      font-weight: 100;
+      font-size: 2.2rem;
+      color: rgb(15,152,233);
+      margin: 0;
+      margin-top: 1.8rem;
+    }
+    p{
+      font-family: "Proxima Nova Regular";
+      font-size: 1.4rem;
+      width: 90%;
+      color: rgb(107,121,133);
+      &:last-of-type{
+        margin-top: 2.7rem;
+        color: rgb(33,33,33);
+      }
+    }
+  }
+
+  #pages{
+    @include dflex(r,sb,c);
+    width: 80%;
+
+    margin-top: 5.3rem;
+    margin-bottom: 7.5rem;
+
+    padding-top: 3rem;
+
+    border-top: 0.1rem solid rgb(235,235,235);
+    >div{
+      @include dflex(r,c,c);
+      p{
+        font-size: 1.4rem;
+        margin: auto 1rem;
+      }
+    }
+    i{
+      text-align: center;
+      font-size: 2.5rem;
+    }
+    button {
+      @include dflex(r,sb,c);
+      font-family: "Proxima Nova Bold";
+      background-color: rgb(255,255,255);
+      font-size: 1.85rem;
+      color: rgb(15, 152, 233);
+      border: 0.05rem solid rgb(235,235,235);
+      border-radius: 0.3rem;
+
+      padding: 1rem;
+      width: 9rem;
+    }
+  }
+}

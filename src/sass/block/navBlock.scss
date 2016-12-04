@@ -1,0 +1,187 @@
+body > nav#navBlock {
+  @include dflex(r, c, c);
+  position: relative;
+  top: -10.2rem;
+  margin-left: 1.4rem;
+  a {
+    @include dflex();
+    width: 16.03rem;
+    height: 20.7rem;
+    background-color: rgb(3, 132, 206);
+    //background-color: red;
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+    h5 {
+      @include dflex();
+      position: relative;
+      font-family: Proxima Nova Regular;
+      font-size: 1.3rem;
+      font-weight: normal;
+      margin: 0;
+      padding: 0;
+      padding-bottom: 2.2rem;
+      &::after {
+        content: "";
+        display: block;
+        height: 100%;
+        width: 3rem;
+        border-bottom: 0.15rem solid rgb(255, 255, 255);
+        margin-top: 2rem;
+      }
+    }
+    p {
+      font-family: Proxima Nova Regular;
+      font-size: 1.05rem;
+      font-weight: 100;
+      text-align: center;
+      width: 65%;
+      margin: 0;
+      padding: 0;
+      padding-top: 1rem;
+    }
+  }
+}
+
+@media (min-width: 0) and (max-width: $xs-adapt - 1) {
+  body > nav#navBlock {
+    width: 100%;
+    @include dflex(c, c, c);
+
+    position: relative;
+    margin-left: 0;
+
+    top: 0;
+
+    a {
+      @include dflex();
+      width: 100%;
+      height: 52rem;
+      background-color: rgb(3, 132, 206);
+      //background-color: red;
+      color: rgb(255, 255, 255);
+      h5 {
+        @include dflex();
+        position: relative;
+        font-family: Proxima Nova Regular;
+        font-size: 7rem;
+        font-weight: normal;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 2.2rem;
+        &::after {
+          display: none;
+        }
+      }
+      p {
+        display: none;
+      }
+
+      $list: 1 2 3 4 5;
+      @each $ind in $list {
+        &:nth-of-type(#{$ind}) {
+          background: url("/files/img/nav_block_xs/#{$ind}.jpg") no-repeat;
+          background-size: contain;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $xs-adapt) and (max-width: $s-adapt - 1) {
+  body > nav#navBlock {
+    width: 100%;
+    @include dflex(r, sb, c);
+    position: relative;
+    top: -10.2rem;
+    margin-left: 0rem;
+    a {
+      @include dflex();
+      width: 16.03rem*1.25;
+      height: 20.7rem*1.25;
+      background-color: rgb(3, 132, 206);
+      color: rgb(255, 255, 255);
+      h5 {
+        @include dflex();
+        position: relative;
+        font-family: Proxima Nova Regular;
+        text-align: center;
+        font-size: 3.2rem;
+        font-weight: normal;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 2.2rem;
+        &::after {
+          display: none;
+        }
+      }
+      p {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: $s-adapt) and (max-width: $m-adapt - 1) {
+  body > nav#navBlock {
+    width: 100%;
+    @include dflex(r, sb, c);
+    position: relative;
+    top: -10.2rem;
+    margin-left: 0rem;
+    a {
+      @include dflex();
+      width: 16.03rem*1.25;
+      height: 20.7rem*1.25;
+      background-color: rgb(3, 132, 206);
+      color: rgb(255, 255, 255);
+      h5 {
+        @include dflex();
+        position: relative;
+        font-family: Proxima Nova Regular;
+        text-align: center;
+        font-size: 3.2rem;
+        font-weight: normal;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 2.2rem;
+        &::after {
+          display: none;
+        }
+      }
+      p {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: $s-adapt) {
+  body > nav#navBlock {
+    a {
+      &:nth-of-type(1):hover {
+        background: url("/files/img/plumbingProblems.jpg") no-repeat;
+        background-size: 100% 100%;
+      }
+      &:nth-of-type(2):hover {
+        background: url("/files/img/source/Depositphotos_37437235_original-cropped.jpg") no-repeat;
+        background-size: 190% 100%;
+        background-position: top;
+      }
+      &:nth-of-type(3):hover {
+        background: url("/files/img/source/drain.jpg") no-repeat;
+        background-size: 130% 100%;
+        background-position: top;
+      }
+      &:nth-of-type(4):hover {
+        background: url("/files/img/source/Emergency-Plumbing-Problems.jpg") no-repeat;
+        background-size: 160% 100%;
+        background-position: top;
+      }
+      &:nth-of-type(5):hover {
+        background: url("/files/img/source/Sewer-Camera-Inspection-1.jpg") no-repeat;
+        background-size: 180% 100%;
+        background-position: top;
+      }
+    }
+  }
+}

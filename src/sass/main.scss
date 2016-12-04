@@ -1,0 +1,43 @@
+// suppMat
+@import "supp/normalize";
+@import "supp/variables";
+@import "supp/fa/font-awesome";
+
+// bcss
+@import "block/header";
+@import "block/introBox";
+@import "block/navBlock";
+@import "block/plumbingEmergency";
+@import "block/callNow";
+@import "block/feedback";
+@import "block/aboutBlog";
+@import "block/footer";
+@import "block/semiIntroBox";
+@import "block/suportInfo";
+@import "block/blog";
+@import "block/aboutUs";
+@import "block/inputBlock";
+@import "block/pages";
+@import "block/feedbackPage";
+
+.small-menu{
+  display: none;
+
+  width: 100%;
+  padding: 3.5rem;
+
+  font-family: "Proxima Nova Regular";
+
+  font-size: 4rem;
+  background: linear-gradient(to right, #072753, #004394);
+  a{
+    margin: 3.5rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(255,255,255);
+  }
+}
+
+.active{
+  @include dflex();
+}

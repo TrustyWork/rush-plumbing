@@ -1,0 +1,374 @@
+#aboutUsBlock {
+  @include dflex(c,s,c);
+  width: 80%;
+  h2{
+    font-family: "Proxima Nova Bold";
+    font-size: 1.85rem;
+    margin: 0;
+    margin-top: 2rem;
+  }
+  >div{
+    @include dflex(r,sb,c);
+    width: 100%;
+
+    margin-top: 2.4rem;
+    article{
+      width: 46%;
+      p{
+        &.important{
+          font-family: "Proxima Nova Bold";
+          font-size: 1.485rem;
+          color: rgb(0,67,149);
+          margin-top: -1rem;
+        }
+        font-family: "Proxima Nova Regular";
+        font-size: 0.9rem;
+        margin-top: 1.4rem;
+      }
+    }
+    aside{
+      @include dflex(r,sb,sb);
+      flex-wrap: wrap;
+      width: 50%;
+      img{
+        height: 13rem;
+        margin-bottom: 0.9rem;
+      }
+    }
+  }
+}
+
+div.manAndCar {
+  @include dflex(r,c,c);
+  width: 100%;
+  margin-top: 5.2rem;
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+
+  background-color: rgb(245, 245, 245);
+  >div{
+    @include dflex(r,s,s);
+    width: 80%;
+    img#car {
+      height: 21rem;
+      margin-right: 7.8rem;
+    }
+    img#car-xs{
+      display: none;
+    }
+    content{
+      @include dflex(r,s,s);
+      flex-wrap: wrap;
+      margin-top: 0.5rem;
+      main{
+        @include dflex(r,s,s);
+        width: 50%;
+
+        margin-top: 2.35rem;
+      }
+      img{
+        height: 1.8rem;
+        margin-top: 0.2rem;
+        margin-right: 1.1rem
+      }
+      div{
+        @include dflex(c,s,s);
+        width: 70%;
+
+        h6{
+          margin: 0;
+          margin-bottom: 0.4rem;
+          font-family: "Proxima Nova Light";
+          font-size: 1.1rem;
+        }
+        p{
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 0) and (max-width: $xs-adapt - 1){
+  #aboutUsBlock {
+    @include dflex(c,s,c);
+    width: 80%;
+    h2{
+      font-family: "Proxima Nova Bold";
+      font-size: 6rem;
+      text-align: center;
+      margin: 0;
+      margin-top: 2rem;
+    }
+    >div{
+      @include dflex(c,sb,c);
+      width: 100%;
+
+      margin-top: 2.4rem;
+      article{
+        width: 98%;
+        p{
+          &.important{
+            font-family: "Proxima Nova Bold";
+            font-size: 3.8rem;
+            color: rgb(0,67,149);
+            margin-top: -1rem;
+          }
+          font-family: "Proxima Nova Regular";
+          font-size: 3.6rem;
+          margin-top: 1.4rem;
+        }
+      }
+      aside{
+        @include dflex(r,c,s);
+        flex-wrap: wrap;
+        width: 90%;
+        img{
+          height: 47rem;
+          margin-bottom: 0.9rem;
+        }
+      }
+    }
+  }
+
+  div.manAndCar {
+    @include dflex(c,c,c);
+    width: 100%;
+    margin-top: 5.2rem;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+
+    background-color: rgb(245, 245, 245);
+    >div{
+      @include dflex(c,s,s);
+      width: 80%;
+      img#car {
+        height: 21rem;
+        margin-right: 7.8rem;
+        display: none;
+      }
+      img#car-xs{
+        display: block;
+        margin: 0;
+        height: 50rem;
+      }
+      content{
+        @include dflex(c,s,s);
+        flex-wrap: wrap;
+        margin-top: 0.5rem;
+        main{
+          @include dflex(r,s,s);
+          width: 100%;
+
+          margin-top: 2.35rem;
+        }
+        img{
+          height: 6rem;
+          margin-top: 0.2rem;
+          margin-right: 5rem
+        }
+        div{
+          @include dflex(c,s,s);
+          width: 90%;
+
+          h6{
+            margin: 0;
+            margin-bottom: 0.4rem;
+            font-family: "Proxima Nova Light";
+            font-size: 4.2rem;
+          }
+          p{
+            font-size: 4.0rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $xs-adapt) and (max-width: $s-adapt - 1){
+  #aboutUsBlock {
+    @include dflex(c,s,c);
+    width: 80%;
+    h2{
+      font-family: "Proxima Nova Bold";
+      font-size: 3.8rem;
+      margin: 0;
+      margin-top: 2rem;
+    }
+    >div{
+      @include dflex(c,sb,c);
+      width: 100%;
+
+      margin-top: 2.4rem;
+      article{
+        width: 90%;
+        p{
+          &.important{
+            font-family: "Proxima Nova Bold";
+            font-size: 2.6rem;
+            color: rgb(0,67,149);
+            margin-top: -1rem;
+          }
+          font-family: "Proxima Nova Regular";
+          font-size: 2.2rem;
+          margin-top: 1.4rem;
+        }
+      }
+      aside{
+        @include dflex(r,sb,sb);
+        flex-wrap: wrap;
+        width: 90%;
+        img{
+          height: 23rem;
+          margin-bottom: 0.9rem;
+        }
+      }
+    }
+  }
+
+  div.manAndCar {
+    @include dflex(r,c,c);
+    width: 100%;
+    margin-top: 5.2rem;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+
+    background-color: rgb(245, 245, 245);
+    >div{
+      @include dflex(c,s,s);
+      width: 80%;
+      img#car {
+        height: 32rem;
+        margin-left: 5rem;
+      }
+      img#car-xs{
+        display: none;
+      }
+      content{
+        @include dflex(c,s,s);
+        flex-wrap: wrap;
+        margin-top: 0.5rem;
+        main{
+          @include dflex(r,s,s);
+          width: 90%;
+
+          margin-top: 2.35rem;
+        }
+        img{
+          height: 3.8rem;
+          margin-top: 0.2rem;
+          margin-right: 1.1rem
+        }
+        div{
+          @include dflex(c,s,s);
+          width: 70%;
+
+          h6{
+            margin: 0;
+            margin-bottom: 0.4rem;
+            font-family: "Proxima Nova Light";
+            font-size: 3.2rem;
+          }
+          p{
+            font-size: 2.6rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $s-adapt) and (max-width: $m-adapt - 1){
+  #aboutUsBlock {
+    @include dflex(c,s,c);
+    width: 80%;
+    h2{
+      font-family: "Proxima Nova Bold";
+      font-size: 3.8rem;
+      margin: 0;
+      margin-top: 2rem;
+    }
+    >div{
+      @include dflex(c,sb,c);
+      width: 100%;
+
+      margin-top: 2.4rem;
+      article{
+        width: 90%;
+        p{
+          &.important{
+            font-family: "Proxima Nova Bold";
+            font-size: 2.6rem;
+            color: rgb(0,67,149);
+            margin-top: -1rem;
+          }
+          font-family: "Proxima Nova Regular";
+          font-size: 2.2rem;
+          margin-top: 1.4rem;
+        }
+      }
+      aside{
+        @include dflex(r,sb,sb);
+        flex-wrap: wrap;
+        width: 90%;
+        img{
+          height: 23rem;
+          margin-bottom: 0.9rem;
+        }
+      }
+    }
+  }
+
+  div.manAndCar {
+    @include dflex(r,c,c);
+    width: 100%;
+    margin-top: 5.2rem;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+
+    background-color: rgb(245, 245, 245);
+    >div{
+      @include dflex(c,s,c);
+      width: 80%;
+      img#car {
+        height: 32rem;
+        margin-right: 7.8rem;
+      }
+      img#car-xs{
+        display: none;
+      }
+      content{
+        @include dflex(r,s,s);
+        flex-wrap: wrap;
+        margin-top: 0.5rem;
+        main{
+          @include dflex(r,s,s);
+          width: 50%;
+
+          margin-top: 2.35rem;
+        }
+        img{
+          height: 2.4rem;
+          margin-top: 0.2rem;
+          margin-right: 1.1rem
+        }
+        div{
+          @include dflex(c,s,s);
+          width: 70%;
+
+          h6{
+            margin: 0;
+            margin-bottom: 0.4rem;
+            font-family: "Proxima Nova Light";
+            font-size: 2.4rem;
+          }
+          p{
+            font-size: 2.2rem;
+            font-weight: 100;
+          }
+        }
+      }
+    }
+  }
+}
