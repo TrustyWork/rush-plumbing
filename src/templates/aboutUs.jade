@@ -6,53 +6,9 @@ html
 		link(rel="stylesheet", href="css/main.css")
 		link(rel="icon", sizes="192x192", href="files/favicon.ico")
 	body
-		header
-			img(src="files/img/logo.png")
-			-
-				var ref = ["Home",
-				"Plumbing Problems",
-				"Residential Plumbing",
-				"Commercial Plumbing",
-				"Blog",
-				"About Us",
-				"Contact Us",
-				"Reviews"]
-				var links = ["/index.html", "/PlumberProblems.html", null, null,
-				"/Blog.html", "/aboutUs.html",
-				"/Contact.html", "/Reviews.html"]
-			nav
-				each val,ind in ref
-					a(href= links[ind])= val
-			div
-				aside.callingIn
-					i(class="fa fa-phone" aria-hidden="true")
-					p= "818-344-1111"
-				i.fa.fa-bars
-		nav.small-menu
-			each val,ind in ref
-				a(href= links[ind])= val
+		include _header.jade
 		main#semiIntroBox
-			nav
-				-
-					var ref = ["Draun Cleaning",
-					"Emergency Plumbing",
-					"Sewer Services",
-					"Trenchless Sewer",
-					"Gas Shut Off Valve",
-					"Faucets & Fixtures",
-					"Water Heaters"]
-				each val in ref
-					p= val
-			aside
-				h1 All Plumbing services
-				article
-					div
-						p= "24/7 Service"
-						i.fa.fa-circle
-						p= "Emergency"
-						i.fa.fa-circle
-						p= "Residential & Commercial"
-					p= "Call us now: 818 - 344- 1111"
+			include _menu-common.jade
 
 		article#suportInfo
 			div#position
@@ -172,10 +128,5 @@ html
 				aside.callingIn
 					i(class="fa fa-phone" aria-hidden="true")
 					p= "818-344-1111"
-			footer
-				p= "Copyright © 2016 Rush Plubming. All Rights Reserved."
-				div
-					-var icon = ["fa-facebook", "fa-twitter", "fa-google-plus", "fa-fax", "fa-rss"]
-					each val in icon
-						i(class="fa" class=val)
+			include _footer.jade
 	script(src="/js/main.js")

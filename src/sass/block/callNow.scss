@@ -39,7 +39,7 @@ body>div#CallNow{
       }
     }
 
-    >div{
+    > a{
       @include dflex();
       margin-right: 12.5rem;
 
@@ -110,7 +110,7 @@ body>div#CallNow{
         }
       }
 
-      >div{
+      > a{
         @include dflex();
         margin-right: 0;
 
@@ -176,7 +176,7 @@ body>div#CallNow{
         }
       }
 
-      >div{
+      > a{
         @include dflex();
         margin-right: 0;
 

@@ -1,0 +1,32 @@
+header
+    img(src="files/img/logo.png")
+    -
+        var ref = ["Home",
+        "Plumbing Problems",
+        "Residential Plumbing",
+        "Commercial Plumbing",
+        "Blog",
+        "About Us",
+        "Contact Us",
+        "Reviews"]
+        var links = ["/index.html",
+        "/PlumberProblems.html",
+        "/PlumberProblems.html",
+        "/PlumberProblems.html",
+        "/Blog.html",
+        "/aboutUs.html",
+        "/Contact.html",
+        "/Reviews.html"]
+    nav
+        each val,ind in ref
+            a(href=links[ind])= val
+    div
+        aside.callingIn
+            i(class="fa fa-phone" aria-hidden="true")
+            a.unstyled(href="tel:+18183441111")
+                p= "818-344-1111"
+        i.fa.fa-bars
+
+nav.small-menu
+    each val,ind in ref
+        a(href=links[ind])= val

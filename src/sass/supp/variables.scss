@@ -2,6 +2,11 @@
 @import "fonts";
 @import "init";
 
+$colors: (
+	"blue": rgb(3, 132, 206),
+	"dark-blue": rgb(7, 39, 83)
+);
+
 // область адаптивов
 $xs-adapt: 500px;
 $s-adapt: 768px;

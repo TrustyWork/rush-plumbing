@@ -6,44 +6,10 @@ html
 		link(rel="stylesheet", href="css/main.css")
 		link(rel="icon", sizes="192x192", href="files/favicon.ico")
 	body
-		header
-			img(src="files/img/logo.png")
-			-
-				var ref = ["Home",
-				"Plumbing Problems",
-				"Residential Plumbing",
-				"Commercial Plumbing",
-				"Blog",
-				"About Us",
-				"Contact Us",
-				"Reviews"]
-				var links = ["/index.html", "/PlumberProblems.html", null, null,
-				"/Blog.html", "/aboutUs.html",
-				"/Contact.html", "/Reviews.html"]
-			nav
-				each val,ind in ref
-					a(href= links[ind])= val
-			div
-				aside.callingIn
-					i(class="fa fa-phone" aria-hidden="true")
-					p= "818-344-1111"
-				i.fa.fa-bars
-		nav.small-menu
-			each val,ind in ref
-				a(href= links[ind])= val
+		include _header.jade
 
 		main#introBox
-			nav
-				-
-					var ref = ["Draun Cleaning",
-					"Emergency Plumbing",
-					"Sewer Services",
-					"Trenchless Sewer",
-					"Gas Shut Off Valve",
-					"Faucets & Fixtures",
-					"Water Heaters"]
-				each val in ref
-					p= val
+			include _nav.jade
 			img(src="files/img/man.png")
 			aside
 				h1 Welcome To Rush Plumbing Website
@@ -53,7 +19,8 @@ html
 					p.
 						We are there when you need us, ready to take care of any Los Angeles Plumbing
 						problem that you may have with your plumbing systems
-					p= "Call us now: 818 - 344- 1111"
+					p
+						a.unstyled(href="tel:+18183441111")= "Call us now: 818 - 344- 1111"
 		nav#navBlock
 			-
 				var title = ["Plumbing Problems",
@@ -67,14 +34,17 @@ html
 				"The kitchen is an important part of ever home and it is also one of the rooms which have plumbing.",
 				"The kitchen is an important part of ever home and it is also one of the rooms which have plumbing."]
 			each val,ind in title
-				a
-					h5= val
-					p= context[ind]
+				a(href="#").unstyled
+					div.bg
+						h5= val
+						p= context[ind]
 		article#plumbingEmergency
 			- var plumbingEmergencyImg = "/files/img/articleVideo.jpg"
 			main
 				h4= "Have a Plumbing & Rooter Emergency?"
-				img(src=plumbingEmergencyImg)
+				div.video
+					img(src=plumbingEmergencyImg)
+					iframe(src="https://www.youtube.com/embed/-qGIelDF3PA" frameborder="0" allowfullscreen)
 				p.
 					Plumbing Contributes to approximately 1/6th the of a houses value.
 					An effective plumbing system can last, and will save you money over time.
@@ -86,7 +56,9 @@ html
 					Professional quality service to the community is our constant driving factor.
 					We repair sewage and structural damage to your house.
 					Both a residential and commercial Los Angeles plumber service, we are flexible and settle at just prices.
-			img(src=plumbingEmergencyImg)
+			div.video
+				img(src=plumbingEmergencyImg)
+				iframe(src="https://www.youtube.com/embed/-qGIelDF3PA?controls=0&showinfo=0" frameborder="0" allowfullscreen)
 		div#CallNow
 			div
 				article
@@ -97,7 +69,9 @@ html
 						text= "or"
 						span= " contact us "
 						text= "to set up a free in-home estimate"
-				div= "CALL US NOW!"
+				a.unstyled(href="tel:+18183441111")
+					div.nohov="CALL US NOW!"
+					div.hov="818-344-1111"
 			img(src="/files/img/gaechnkl006.png")
 		div#feedback
 			article
@@ -154,7 +128,8 @@ html
 						"Faucets & Fixturex",
 						"Water Heaters"]
 					each val in serv
-						li= val
+						li
+							a.unstyled(href="#")= val
 			div#information
 				h6.listHeader= "Information"
 				ul
@@ -167,17 +142,14 @@ html
 						"FAQ",
 						"Contact us"]
 					each val in info
-						li= val
+						li
+							a.unstyled(href="#")= val
 			div#cont
 				h6= "Contact us"
 				p= "You can always contact with us via email or phone. Get in touch with contact and get a quote form."
 				aside.callingIn
 					i(class="fa fa-phone" aria-hidden="true")
-					p= "818-344-1111"
-			footer
-				p= "Copyright © 2016 Rush Plubming. All Rights Reserved."
-				div
-					-var icon = ["fa-facebook", "fa-twitter", "fa-google-plus", "fa-fax", "fa-rss"]
-					each val in icon
-						i(class="fa" class=val)
+					p
+						a.unstyled(href="tel:+18183441111")= "818-344-1111"
+			include _footer.jade
 	script(src="js/main.js")

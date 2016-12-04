@@ -17,12 +17,18 @@ body>main#introBox{
 
     @include dflex(r,c,c);
     background: linear-gradient(to right, rgb(7,39,83), rgb(0,67,148));
-    p{
+    a{
       font-size: 0.8rem;
       font-family: "Proxima Nova Regular";
       text-transform: uppercase;
       color: rgb(255,255,255);
-      margin: 1.4rem 1.91rem;
+      padding: 1.4rem 1.91rem 1.4rem;
+
+      &:hover {
+        $color: map-get( $colors, "blue");
+        background-color: #{$color};
+
+      }
     }
   }
 

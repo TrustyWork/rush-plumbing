@@ -13,12 +13,16 @@ body > header {
     @include dflex(r, c, c);
     a {
       font-family: "Proxima Nova Regular";
-      color: rgb(7, 39, 83);
+      color: #{map_get( $colors, "dark-blue")};
       font-size: 0.75rem;
       margin: 0 1.35rem;
       text-decoration: none;
+      padding: 1rem 0;
 
-      cursor: pointer;
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
     }
   }
   div {
@@ -115,7 +119,7 @@ aside.callingIn {
         font-family: "Proxima Nova Regular";
         color: rgb(7, 39, 83);
         font-size: 2rem;
-        margin: 1rem 1.35rem;
+        margin: 0 1.35rem;
       }
     }
     div {

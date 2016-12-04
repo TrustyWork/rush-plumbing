@@ -67,11 +67,11 @@ body > footer {
     padding: 0;
     li {
       list-style:none;
-      color: rgb(255, 255, 255);
-      font-size: 0.85rem;
       margin-left: -0.6rem;
       margin-bottom: 0.67rem;
       padding-left: 0.5rem;
+      color: rgb(255, 255, 255);
+
       &::before{
         content: '';
         display: inline-block;
@@ -80,6 +80,12 @@ body > footer {
         height: 0.6rem;
         width: 0.6rem;
         margin-right: 1rem;
+      }
+      a {
+        font-size: 0.85rem;
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }
@@ -101,8 +107,12 @@ body > footer {
     }
     div{
       margin-left: 40rem;
+      color: rgb(15,152,233);
+      a:hover {
+        color: #fff;
+      }
       i.fa{
-        color: rgb(15,152,233);
+
         font-size: 0.9rem;
         margin-right: 1.75rem;
       }
@@ -181,9 +191,8 @@ body > footer {
       padding: 0;
       li {
         list-style:none;
-        color: rgb(255, 255, 255);
-        font-size: 4rem;
         margin-left: -0.6rem;
+        color: rgb(255, 255, 255);
         margin-bottom: 2rem;
         padding-left: 0.5rem;
         &::before{
@@ -194,6 +203,10 @@ body > footer {
           height: 2.8rem;
           width: 2.8rem;
           margin-right: 1rem;
+        }
+
+        a {
+          font-size: 4rem;
         }
       }
     }
@@ -295,7 +308,6 @@ body > footer {
       li {
         list-style:none;
         color: rgb(255, 255, 255);
-        font-size: 2.2rem;
         margin-left: -0.6rem;
         margin-bottom: 2rem;
         padding-left: 0.5rem;
@@ -307,6 +319,10 @@ body > footer {
           height: 1.2rem;
           width: 1.2rem;
           margin-right: 1rem;
+        }
+
+        a {
+          font-size: 2.2rem;
         }
       }
     }
@@ -410,7 +426,6 @@ body > footer {
       li {
         list-style:none;
         color: rgb(255, 255, 255);
-        font-size: 1.4rem;
         margin-left: -0.6rem;
         margin-bottom: 0.67rem;
         padding-left: 0.5rem;
@@ -422,6 +437,10 @@ body > footer {
           height: 0.8rem;
           width: 0.8rem;
           margin-right: 1rem;
+        }
+
+        a {
+          font-size: 1.4rem;
         }
       }
     }
@@ -524,7 +543,6 @@ body > footer {
       li {
         list-style:none;
         color: rgb(255, 255, 255);
-        font-size: 1.4rem;
         margin-left: -0.6rem;
         margin-bottom: 0.67rem;
         padding-left: 0.5rem;
@@ -536,6 +554,10 @@ body > footer {
           height: 0.8rem;
           width: 0.8rem;
           margin-right: 1rem;
+        }
+
+        a {
+          font-size: 1.4rem;
         }
       }
     }

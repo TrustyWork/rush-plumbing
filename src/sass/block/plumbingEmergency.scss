@@ -14,13 +14,33 @@ body>article#plumbingEmergency{
     p{
       font-family: "Proxima Nova Regular";
     }
-    img{
+    .video {
       display: none;
     }
   }
-  img{
-    height: 25.5rem;
+  .video {
+    $height: 25.5rem;
+    height: $height;
+    width: $height * 1.55;
     user-select: none;
+
+    img, iframe {
+      height: 100%;
+      width: 100%;
+    }
+
+    iframe{
+      display: none;
+    }
+
+    &:hover {
+      img{
+        display: none;
+      }
+      iframe{
+        display: block;
+      }
+    }
   }
 }
 
@@ -45,16 +65,27 @@ body>article#plumbingEmergency{
         font-size: 3.9rem;
         margin: 2rem;
       }
-      img{
-        height: 59.3rem;
+      .video {
+        $height: 59.3rem;
+        height: $height;
+        width: $height * 1.55;
 
         display: block;
         margin: 2rem;
+
+        img{
+          display: none;
+        }
+        iframe{
+          display: block;
+        }
       }
     }
-    img{
+    .video{
       display: none;
-      height: 25.5rem;
+      $height: 25.5rem;
+      height: $height;
+      width: $height * 1.55;
       user-select: none;
     }
   }
@@ -80,14 +111,21 @@ body>article#plumbingEmergency{
         font-family: "Proxima Nova Regular";
         font-size: 2.4rem;
       }
-      img{
+      .video{
         display: block;
         float: right;
         margin-left: 1rem;
         margin-bottom: 0.5rem;
+
+        img{
+          display: none;
+        }
+        iframe{
+          display: block;
+        }
       }
     }
-    img{
+    .video{
       display: none;
     }
   }
@@ -112,12 +150,21 @@ body>article#plumbingEmergency{
         font-family: "Proxima Nova Regular";
         font-size: 1.5rem;
       }
-      img{
+      .video{
         display: none;
+
+        img{
+          display: none;
+        }
+        iframe{
+          display: block;
+        }
       }
     }
-    img{
-      height: 25.5rem;
+    .video{
+      $height: 25.5rem;
+      height: $height;
+      width: $height * 1.55;
       user-select: none;
     }
   }
