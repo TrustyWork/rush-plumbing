@@ -1,0 +1,60 @@
+main#semiIntroBox
+    include _menu-common.jade
+
+article#suportInfo
+    div#position
+        p
+            a.unstyled(href="/#!/")= "Home"
+        i.fa.fa-angle-right
+        p
+            a.unstyled(href="#")= "REVIEWS"
+    div#content
+        h2= "TESTIMONIALS"
+
+div#feedbackPage
+    article
+
+        form(ng-class="{'ng-cloak': processTestimonial != 1}")
+            div.form-item
+                label(for="input-id-name")
+                    text.class= "Your name"
+                    span="*"
+                input#input-id-name(ng-model="testimonial.author" type="text" required="required" style="background-repeat: repeat; background-image: none; background-position: 0% 0%;")
+            div.form-item
+                label(for="input-id-location")
+                    text.class= "Location"
+                    span="*"
+                input#input-id-location(ng-model="testimonial.location" type="text" required="required" style="background-repeat: repeat; background-image: none; background-position: 0% 0%;")
+            div.form-item
+                label(for="input-id-testimonial")
+                    text.class= "Testimonial"
+                    span="*"
+                textarea#input-id-testimonial(ng-model="testimonial.content" type="text" required="required" style="background-repeat: repeat; background-image: none; background-position: 0% 0%;")
+            button(type="submit" style="float:right" ng-click="add(testimonial)")="Send message"
+        img(ng-class="{'ng-cloak': processTestimonial != 2}" src="/images/loading.svg")
+        //p.
+        //    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolore
+        //    que laudantium, totam rem aperiam
+        button(ng-click="processTestimonial= 1" )= "Add A Testimonial"
+
+    div#feedbacks-wr
+        div.respounce-block(ng-repeat="item in list")
+            div.respounce-quote
+                a.fa.fa-quote-left
+                p.respounce="{{item.content}}"
+
+            p.author
+                b="{{item.author}}, "
+                text="{{item.location}}"
+
+    nav#pages
+        button
+            i.fa.fa-arrow-left
+            text= "PREV"
+        div
+            a(href="#")= 1
+            a(href="#")= 2
+            a(href="#")= 3
+        button
+            text= "NEXT"
+            i.fa.fa-arrow-right

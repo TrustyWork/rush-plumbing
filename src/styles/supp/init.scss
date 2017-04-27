@@ -1,0 +1,10 @@
+html{
+  font-size: 1vw;
+  height: 100%;
+  width: 100%;
+}
+
+body, [ng-view]{
+  @include dflex();
+  width: 100%;
+}

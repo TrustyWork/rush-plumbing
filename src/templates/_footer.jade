@@ -1,7 +1,29 @@
 footer
-    p= "Copyright © 2016 Rush Plubming. All Rights Reserved."
-    div
-        -var icon = ["fa-facebook", "fa-twitter", "fa-google-plus", "fa-fax", "fa-rss"]
-        each val in icon
-            a.unstyled(href="#")
-                i(class="fa" class=val)
+    div#aboutCompany
+        h6= "About company"
+        p.
+            Work with us once, and you'll find we at Rush Plumbing take our job seriously and value the trust
+            and responsibility you place in us. We go beyond the call of duty by investing in the extra
+            training and equipment that we consider necessary to properly protect your home or business.
+    div#services(ng-controller="ServicesNavCtrl")
+        h6.listHeader= "Services"
+        ul
+            li(ng-repeat="(name, href) in links")
+                a.unstyled( ng-href="{{href}}")= "{{name}}"
+    div#information(ng-controller="InformationsNavCtrl")
+        h6.listHeader= "Information"
+        ul
+            li(ng-repeat="(name, href) in links")
+                a.unstyled( ng-href="{{href}}")= "{{name}}"
+    div#cont
+        h6= "Contact us"
+        p= "You can always contact with us via email or phone. Get in touch with contact and get a quote form."
+        aside.callingIn
+            i(class="fa fa-phone" aria-hidden="true")
+            p
+                a.unstyled(href="tel:+18183441111")= "818-344-1111"
+    footer
+        p= "Copyright © 2016 Rush Plubming. All Rights Reserved."
+        div(ng-controller="SocialNavCtrl")
+            a.unstyled(ng-repeat="(name, href) in links" ng-href="{{href}}")
+                i.fa( ng-class="icons[name]")

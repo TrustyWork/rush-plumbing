@@ -1,0 +1,293 @@
+article#PlumbingProblemsSRepairs{
+  @include dflex();
+
+  color: rgb(117,117,117);
+
+  div#position{
+    @include dflex(r,c,c);
+    margin-top: 2.5rem;
+    p{
+      font-size: 0.8rem;
+      letter-spacing: 0.08rem;
+      &:first-of-type{
+        color: rgb(15,152,233);
+      }
+    }
+
+    i{
+      margin: 0 1.5rem;
+    }
+  }
+
+  div#content{
+    @include dflex(c,s,s);
+    width: 70.5%;
+    h2{
+      @include dflex();
+
+      font-family: "Proxima Nova Bold";
+      margin-top: 2.25rem;
+      width: 100%;
+
+      color: rgb(7,39,83);
+
+      font-size: 2.2rem;
+      letter-spacing: 0.1rem;
+      text-align: center;
+      &:after{
+        content: "";
+        display: block;
+
+        width: 24%;
+        height: 100%;
+        margin-top: 2rem;
+        border-bottom: 0.2rem solid rgb(0,67,149);
+      }
+    }
+    >p{
+      font-family: "Proxima Nova Regular";
+      margin: 1rem 0;
+      font-size: 1.2rem;
+      &:first-of-type{
+        width: 100%;
+        text-align: center;
+        font-size: 1.4rem;
+        color: rgb(54,54,54);
+      }
+      &:last-of-type{
+        margin-bottom: 5rem;
+      }
+    }
+    img{
+      height: 26.5rem;
+      margin: 2.5rem 0;
+    }
+    >div#CallUsNow{
+      width: 100%;
+      text-align: center;
+      font-size: 2.15rem;
+
+      margin-bottom: 0;
+      b{
+        color: rgb(15,152,233);
+      }
+    }
+  }
+}
+
+@media (min-device-width: 0) and (max-device-width: $xs-adapt - 1) {
+  article#PlumbingProblemsSRepairs{
+    @include dflex();
+
+    color: rgb(117,117,117);
+
+    div#position{
+      @include dflex(r,c,c);
+      margin-top: 2.5rem;
+      p{
+        font-size: 3.8rem;
+        letter-spacing: 0.08rem;
+        &:first-of-type{
+          color: rgb(15,152,233);
+        }
+      }
+      i{
+        font-size: 3rem;
+        margin: 0 1.5rem;
+      }
+    }
+
+    div#content{
+      @include dflex(c,s,s);
+      width: 95%;
+      h2{
+        font-family: "Proxima Nova Bold";
+        margin-top: 2.25rem;
+        width: 100%;
+
+        font-size: 6.2rem;
+        letter-spacing: 0.1rem;
+        text-align: center;
+      }
+      >p{
+        font-family: "Proxima Nova Regular";
+        margin: 2rem 0;
+        font-size: 3.6rem;
+        &:first-of-type{
+          margin-top: 2.7rem;
+          font-size: 4.3rem;
+        }
+        &:last-of-type{
+          margin-bottom: 8rem;
+        }
+      }
+      img{
+        height: 46rem;
+        margin: 2.5rem 0;
+      }
+      >div#CallUsNow{
+        color: rgb(54,54,54);
+        width: 100%;
+        text-align: center;
+        font-size: 5.55rem;
+        b{
+          color: rgb(15,152,233);
+        }
+      }
+    }
+  }
+}
+
+@media (min-device-width: $xs-adapt) and (max-device-width: $s-adapt - 1) {
+  article#PlumbingProblemsSRepairs{
+    @include dflex();
+
+    color: rgb(117,117,117);
+
+    div#position{
+      @include dflex(r,c,c);
+      margin-top: 2.5rem;
+      p{
+        font-size: 2.8rem;
+        letter-spacing: 0.08rem;
+        &:first-of-type{
+          color: rgb(15,152,233);
+        }
+      }
+
+      i{
+        font-size: 3rem;
+        margin: 0 1.5rem;
+      }
+    }
+
+    div#content{
+      @include dflex(c,s,s);
+      width: 90.5%;
+      h2{
+        @include dflex();
+
+        font-family: "Proxima Nova Bold";
+        margin-top: 2.25rem;
+        width: 100%;
+
+        color: rgb(7,39,83);
+
+        font-size: 5.2rem;
+        letter-spacing: 0.1rem;
+        text-align: center;
+        &:after{
+          content: "";
+          display: block;
+
+          width: 24%;
+          height: 100%;
+          margin-top: 2rem;
+          border-bottom: 0.2rem solid rgb(0,67,149);
+        }
+      }
+      >p{
+        font-family: "Proxima Nova Regular";
+        margin: 1rem 0;
+        font-size: 2.8rem;
+        &:first-of-type{
+          width: 100%;
+          text-align: center;
+          font-size: 3.6rem;
+          color: rgb(54,54,54);
+        }
+      }
+      img{
+        height: 36.5rem;
+        margin: 4.5rem 2rem;
+      }
+      >div#CallUsNow{
+        width: 100%;
+        text-align: center;
+        font-size: 4.15rem;
+
+        margin-bottom: 5rem;
+        b{
+          color: rgb(15,152,233);
+        }
+      }
+    }
+  }
+}
+
+@media (min-device-width: $s-adapt) and (max-device-width: $m-adapt - 1) {
+  article#PlumbingProblemsSRepairs{
+    @include dflex();
+
+    color: rgb(117,117,117);
+
+    div#position{
+      @include dflex(r,c,c);
+      margin-top: 2.5rem;
+      p{
+        font-size: 2.8rem;
+        letter-spacing: 0.08rem;
+        &:first-of-type{
+          color: rgb(15,152,233);
+        }
+      }
+
+      i{
+        font-size: 3rem;
+        margin: 0 1.5rem;
+      }
+    }
+
+    div#content{
+      @include dflex(c,s,s);
+      width: 90.5%;
+      h2{
+        @include dflex();
+
+        font-family: "Proxima Nova Bold";
+        margin-top: 2.25rem;
+        width: 100%;
+
+        color: rgb(7,39,83);
+
+        font-size: 5.2rem;
+        letter-spacing: 0.1rem;
+        text-align: center;
+        &:after{
+          content: "";
+          display: block;
+
+          width: 24%;
+          height: 100%;
+          margin-top: 2rem;
+          border-bottom: 0.2rem solid rgb(0,67,149);
+        }
+      }
+      >p{
+        font-family: "Proxima Nova Regular";
+        margin: 1rem 0;
+        font-size: 2.2rem;
+        &:first-of-type{
+          width: 100%;
+          text-align: center;
+          font-size: 2.6rem;
+          color: rgb(54,54,54);
+        }
+      }
+      img{
+        height: 35.5rem;
+        margin: 3.5rem 5rem;
+      }
+      >div#CallUsNow{
+        width: 100%;
+        text-align: center;
+        font-size: 4.15rem;
+
+        margin-bottom: 2rem;
+        b{
+          color: rgb(15,152,233);
+        }
+      }
+    }
+  }
+}

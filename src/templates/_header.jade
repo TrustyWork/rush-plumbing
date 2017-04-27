@@ -1,32 +1,15 @@
-header
-    img(src="files/img/logo.png")
-    -
-        var ref = ["Home",
-        "Plumbing Problems",
-        "Residential Plumbing",
-        "Commercial Plumbing",
-        "Blog",
-        "About Us",
-        "Contact Us",
-        "Reviews"]
-        var links = ["/index.html",
-        "/PlumberProblems.html",
-        "/PlumberProblems.html",
-        "/PlumberProblems.html",
-        "/Blog.html",
-        "/aboutUs.html",
-        "/Contact.html",
-        "/Reviews.html"]
-    nav
-        each val,ind in ref
-            a(href=links[ind])= val
-    div
-        aside.callingIn
-            i(class="fa fa-phone" aria-hidden="true")
-            a.unstyled(href="tel:+18183441111")
-                p= "818-344-1111"
-        i.fa.fa-bars
+header(ng-controller="MenuSwitcherCtrl")
+    header(ng-controller="SiteNavCtrl")
+        a(href="/#!/")
+            img(src="/images/logo.png")
+        nav
+            a(ng-repeat="(name, href) in links" ng-href="{{href}}")= "{{name}}"
+        div
+            aside.callingIn
+                a.unstyled(href="tel:+18183441111")
+                    i(class="fa fa-phone" aria-hidden="true")
+                    p= "24/7 Emergency Services"
+            i.fa.fa-bars(ng-class="{ active: open}" ng-click="switch()")
 
-nav.small-menu
-    each val,ind in ref
-        a(href=links[ind])= val
+    nav.small-menu(ng-controller="SiteNavCtrl" ng-class="{ active: open}")
+        a(ng-repeat="(name, href) in links" ng-href="{{href}}")= "{{name}}"

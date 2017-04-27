@@ -1,0 +1,590 @@
+body > footer {
+  @include dflex(r, s, s);
+
+  position: relative;
+  background-color: rgb(41, 41, 41);
+
+  height: 25.55rem;
+  width: 100%;
+  font-family: "Proxima Nova Regular";
+
+  h6 {
+    font-family: "Proxima Nova Bold";
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: rgb(113, 116, 119);
+
+    margin: 0;
+    margin-top: 5.2rem;
+    margin-bottom: 1.1rem;
+  }
+
+  #aboutCompany {
+    margin-left: 10rem;
+    width: 20%;
+
+    p {
+      color: rgb(85, 85, 85);
+      font-size: 0.9rem;
+      line-height: 1.2rem;
+      width: 83%;
+    }
+  }
+
+
+  #services {
+    margin-left: 0.4rem;
+  }
+
+  #information {
+    margin-left: 11rem;
+  }
+  #cont{
+    margin-left: 13.4rem;
+    p{
+      width: 19rem;
+      color: rgb(85, 85, 85);
+      font-size: 0.9rem;
+    }
+    &>p{
+      color: #555555;
+      margin-top: 1.5rem;
+    }
+    aside.callingIn{
+      margin-top: 2rem;
+      p{
+        font-family: "Proxima Nova Regular";
+        margin-top: 0.05rem;
+        color: rgb(255,255,255);
+      }
+    }
+
+  }
+
+
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      list-style:none;
+      margin-left: -0.6rem;
+      margin-bottom: 0.67rem;
+      padding-left: 0.5rem;
+      color: rgb(255, 255, 255);
+
+      &::before{
+        content: '';
+        display: inline-block;
+        background: url("/images/list.png") no-repeat;
+        background-size: 100% 100%;
+        height: 0.6rem;
+        width: 0.6rem;
+        margin-right: 1rem;
+      }
+      a {
+        font-size: 0.85rem;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  > footer {
+    @include dflex(r,s,c);
+    font-family: "Proxima Nova Regular";
+    color: rgb(85,85,85);
+    font-size: 0.75rem;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3rem;
+    background-color: rgb(31, 31, 31);
+    p{
+      margin-left: 12.9rem;
+    }
+    div{
+      margin-left: 40rem;
+      color: rgb(15,152,233);
+      a:hover {
+        color: #fff;
+      }
+      i.fa{
+
+        font-size: 0.9rem;
+        margin-right: 1.75rem;
+      }
+    }
+  }
+}
+
+
+
+
+@media (min-device-width: 0) and (max-device-width: $xs-adapt) {
+  body > footer {
+    @include dflex(c, s, s);
+
+    position: relative;
+    background-color: rgb(41, 41, 41);
+
+    height: 255rem;
+    width: 100%;
+    font-family: "Proxima Nova Regular";
+
+    h6 {
+      font-family: "Proxima Nova Bold";
+      text-transform: uppercase;
+      font-size: 7.5rem;
+      color: rgb(113, 116, 119);
+
+      margin: 0;
+      margin-top: 5.2rem;
+      margin-bottom: 1.1rem;
+    }
+
+    #aboutCompany {
+      width: auto;
+
+      p {
+        color: rgb(85, 85, 85);
+        font-size: 4rem;
+        line-height: 4.2rem;
+        width: 83%;
+      }
+    }
+
+    #aboutCompany, #services, #information, #cont{
+      margin-left: 9.5rem;
+    }
+
+    .listHeader{
+      margin-bottom: 4rem;
+    }
+    #cont{
+      p{
+        width: 90%;
+        color: rgb(85, 85, 85);
+        font-size: 4.2rem;
+      }
+      &>p{
+        color: #555555;
+        margin-top: 1.5rem;
+      }
+      aside.callingIn{
+        margin-top: 2rem;
+        i{
+          font-size: 5rem;
+        }
+        p{
+          font-family: "Proxima Nova Regular";
+          color: rgb(255, 255, 255);
+          margin-top: 0.05rem;
+        }
+      }
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        list-style:none;
+        margin-left: -0.6rem;
+        color: rgb(255, 255, 255);
+        margin-bottom: 2rem;
+        padding-left: 0.5rem;
+        &::before{
+          content: '';
+          display: inline-block;
+          background: url("/images/list.png") no-repeat;
+          background-size: 100% 100%;
+          height: 2.8rem;
+          width: 2.8rem;
+          margin-right: 1rem;
+        }
+
+        a {
+          font-size: 4rem;
+        }
+      }
+    }
+
+    > footer {
+      @include dflex(c,c,s);
+      font-family: "Proxima Nova Regular";
+      color: rgb(85,85,85);
+      font-size: 4.5rem;
+
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 30rem;
+      background-color: rgb(31, 31, 31);
+      p{
+        margin-left: 4rem;
+      }
+      div{
+        margin-left: 4rem;
+        margin-bottom: 2rem;
+        i.fa{
+          color: rgb(15,152,233);
+          font-size: 5.5rem;
+          margin-right: 3rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-device-width: $xs-adapt) and (max-device-width: $s-adapt - 1) {
+  body > footer {
+    @include dflex(c, s, s);
+
+    position: relative;
+    background-color: rgb(41, 41, 41);
+
+    height: 184rem;
+    width: 100%;
+    font-family: "Proxima Nova Regular";
+
+    h6 {
+      font-family: "Proxima Nova Bold";
+      text-transform: uppercase;
+      font-size: 5.2rem;
+      color: rgb(113, 116, 119);
+
+      margin: 0;
+      margin-top: 5.2rem;
+      margin-bottom: 1.1rem;
+    }
+
+    #aboutCompany {
+      width: auto;
+
+      p {
+        color: rgb(85, 85, 85);
+        font-size: 2.9rem;
+        line-height: 3rem;
+        width: 83%;
+      }
+    }
+
+    #aboutCompany, #services, #information, #cont{
+      margin-left: 9.5rem;
+    }
+
+    .listHeader{
+      margin-bottom: 4rem;
+    }
+    #cont{
+      p{
+        width: 90%;
+        color: rgb(85, 85, 85);
+        font-size: 4.2rem;
+      }
+      &>p{
+        color: #555555;
+        margin-top: 1.5rem;
+      }
+      aside.callingIn{
+        margin-top: 2rem;
+        i{
+          font-size: 5rem;
+        }
+        p{
+          font-family: "Proxima Nova Regular";
+          color: rgb(255, 255, 255);
+          margin-top: 0.05rem;
+        }
+      }
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        list-style:none;
+        color: rgb(255, 255, 255);
+        margin-left: -0.6rem;
+        margin-bottom: 2rem;
+        padding-left: 0.5rem;
+        &::before{
+          content: '';
+          display: inline-block;
+          background: url("/images/list.png") no-repeat;
+          background-size: 100% 100%;
+          height: 1.2rem;
+          width: 1.2rem;
+          margin-right: 1rem;
+        }
+
+        a {
+          font-size: 2.2rem;
+        }
+      }
+    }
+
+    > footer {
+      @include dflex(c,c,s);
+      font-family: "Proxima Nova Regular";
+      color: rgb(85,85,85);
+      font-size: 2.5rem;
+
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 18rem;
+      background-color: rgb(31, 31, 31);
+      p{
+        margin-left: 4rem;
+      }
+      div{
+        margin-left: 4rem;
+        margin-bottom: 2rem;
+        i.fa{
+          color: rgb(15,152,233);
+          font-size: 2.5rem;
+          margin-right: 3rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-device-width: $s-adapt) and (max-device-width: $m-adapt - 1) {
+  body > footer {
+    @include dflex(r, s, s);
+
+    position: relative;
+    background-color: rgb(41, 41, 41);
+
+    height: 25.55rem;
+    width: 100%;
+    font-family: "Proxima Nova Regular";
+
+    h6 {
+      font-family: "Proxima Nova Bold";
+      text-transform: uppercase;
+      font-size: 1.8rem;
+      color: rgb(113, 116, 119);
+
+      margin: 0;
+      margin-top: 2.2rem;
+      margin-bottom: 1.1rem;
+    }
+
+    #aboutCompany {
+      margin-left: 2rem;
+      width: 20%;
+
+      p {
+        color: rgb(85, 85, 85);
+        font-size: 1.3rem;
+        line-height: 1.3rem;
+        width: 83%;
+      }
+    }
+
+
+    #services {
+      margin-left: 0.4rem;
+    }
+
+    #information {
+      margin-left: 11rem;
+    }
+    #cont{
+      margin-left: 13.4rem;
+      p{
+        width: 19rem;
+        color: rgb(85, 85, 85);
+        font-size: 1.4rem;
+      }
+      &>p{
+        color: #555555;
+        margin-top: 1.5rem;
+      }
+      aside.callingIn{
+        margin-top: 2rem;
+        p{
+          font-family: "Proxima Nova Regular";
+          margin-top: 0.05rem;
+          color: rgb(255,255,255);
+        }
+      }
+
+    }
+
+
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        list-style:none;
+        color: rgb(255, 255, 255);
+        margin-left: -0.6rem;
+        margin-bottom: 0.67rem;
+        padding-left: 0.5rem;
+        &::before{
+          content: '';
+          display: inline-block;
+          background: url("/images/list.png") no-repeat;
+          background-size: 100% 100%;
+          height: 0.8rem;
+          width: 0.8rem;
+          margin-right: 1rem;
+        }
+
+        a {
+          font-size: 1.4rem;
+        }
+      }
+    }
+
+    > footer {
+      @include dflex(r,s,c);
+      font-family: "Proxima Nova Regular";
+      color: rgb(85,85,85);
+      font-size: 0.75rem;
+
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 3rem;
+      background-color: rgb(31, 31, 31);
+      p{
+        margin-left: 12.9rem;
+      }
+      div{
+        margin-left: 40rem;
+        i.fa{
+          color: rgb(15,152,233);
+          font-size: 0.9rem;
+          margin-right: 1.75rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-device-width: $m-adapt) and (max-device-width: $l-adapt - 1) {
+  body > footer {
+    @include dflex(r, s, s);
+
+    position: relative;
+    background-color: rgb(41, 41, 41);
+
+    height: 25.55rem;
+    width: 100%;
+    font-family: "Proxima Nova Regular";
+
+    h6 {
+      font-family: "Proxima Nova Bold";
+      text-transform: uppercase;
+      font-size: 1.8rem;
+      color: rgb(113, 116, 119);
+
+      margin: 0;
+      margin-top: 2.2rem;
+      margin-bottom: 1.1rem;
+    }
+
+    #aboutCompany {
+      margin-left: 2rem;
+      width: 20%;
+
+      p {
+        color: rgb(85, 85, 85);
+        font-size: 1.3rem;
+        line-height: 1.4rem;
+        width: 83%;
+      }
+    }
+
+
+    #services {
+      margin-left: 0.4rem;
+    }
+
+    #information {
+      margin-left: 11rem;
+    }
+    #cont{
+      margin-left: 13.4rem;
+      p{
+        width: 19rem;
+        color: rgb(85, 85, 85);
+        font-size: 1.4rem;
+      }
+      &>p{
+        color: #555555;
+        margin-top: 1.5rem;
+      }
+      aside.callingIn{
+        margin-top: 2rem;
+        p{
+          font-family: "Proxima Nova Regular";
+          margin-top: 0.05rem;
+          color: rgb(255,255,255);
+        }
+      }
+
+    }
+
+
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        list-style:none;
+        color: rgb(255, 255, 255);
+        margin-left: -0.6rem;
+        margin-bottom: 0.67rem;
+        padding-left: 0.5rem;
+        &::before{
+          content: '';
+          display: inline-block;
+          background: url("/images/list.png") no-repeat;
+          background-size: 100% 100%;
+          height: 0.8rem;
+          width: 0.8rem;
+          margin-right: 1rem;
+        }
+
+        a {
+          font-size: 1.4rem;
+        }
+      }
+    }
+
+    > footer {
+      @include dflex(r,s,c);
+      font-family: "Proxima Nova Regular";
+      color: rgb(85,85,85);
+      font-size: 0.75rem;
+
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 3rem;
+      background-color: rgb(31, 31, 31);
+      p{
+        margin-left: 12.9rem;
+      }
+      div{
+        margin-left: 40rem;
+        i.fa{
+          color: rgb(15,152,233);
+          font-size: 0.9rem;
+          margin-right: 1.75rem;
+        }
+      }
+    }
+  }
+}

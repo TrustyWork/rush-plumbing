@@ -1,15 +1,46 @@
 {
   "devDependencies": {
+    "babel-preset-es2015": "^6.18.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
+    "gulp-babel": "^6.1.2",
     "gulp-browserify": "^0.5.1",
     "gulp-clean-css": "^2.0.13",
     "gulp-connect": "^5.0.0",
+    "gulp-htmlmin": "^3.0.0",
     "gulp-if": "^2.0.1",
+    "gulp-image": "^2.7.2",
+    "gulp-image-resize": "^0.11.0",
     "gulp-jade": "^1.1.0",
     "gulp-notify": "^2.2.0",
     "gulp-plumber": "^1.1.0",
     "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^2.2.3",
     "gulp-uglify": "^2.0.0"
-  }
+  },
+  "name": "rush-plumbing",
+  "version": "1.0.0",
+  "description": "new site for http://rushplumbingla.com/",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "scripts": {
+    "serv": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TrustyWork/rush-plumbing.git"
+  },
+  "keywords": [
+    "angular",
+    "spa",
+    "babel",
+    "gulp",
+    "http://rushplumbingla.com/"
+  ],
+  "author": "ML Solution",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TrustyWork/rush-plumbing/issues"
+  },
+  "homepage": "https://github.com/TrustyWork/rush-plumbing#readme"
 }

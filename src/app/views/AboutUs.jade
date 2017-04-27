@@ -1,0 +1,85 @@
+main#semiIntroBox
+	include _menu-common.jade
+
+article#suportInfo
+	div#position
+		p
+			a.unstyled(href="/#!/")= "Home"
+		i.fa.fa-angle-right
+		p
+			a.unstyled(href="/#!/AboutUs")= "ABOUT US"
+	div#content
+		h2= "About us"
+
+div#aboutUsBlock
+	h2= "Home Services Maintenance Business"
+	div.articleBlock
+		article
+			p.important
+				| Why Us?
+			p
+				| Work with us once, and you&#39;ll find we at Rush Plumbing take our job seriously and value
+				| the trust and responsibility you place in us. We go beyond the call of duty by investing in
+				| the extra training and equipment that we consider necessary to properly protect your home
+				| or business.
+			p.important
+				| Think About It… 
+			p
+				| We know it&#39;s so easy to take your home&#39;s plumbing system for granted. Like your body&#39;s
+				| circulatory system, day after day, your system, your plumbing quietly supplies clean water
+				| to meet your needs and spirits away the bad. If you&#39;re like most people, maintaining this
+				| vital system is easy to forget and neglect.
+				| The fact that you&#39;re reading this suggests that more than likely you are experiencing, or
+				| have experienced recently a plumbing problem in your home. Normally this is what gets
+				| your attention. As with all systems, parts suffer wear over time and eventually fail…That&#39;s
+				| why we&#39;re here!
+		aside
+			-var i=0
+			while i<4
+				-i++
+				img(src="/images/about/"+i+".jpg")
+
+div.manAndCar
+	div
+		img(src="/images/about/manScar.jpg")#car
+		content
+			-
+				var title = ["24/7 AVAILALITY", "NO HIDDEN COST", "AFFORDABLE PRICES", "CERTIFIED MECHANICS"]
+				var content = ["Whеthеr in thе home оr іn the wоrkрlасе at Cоnѕtruсt Press, wе аrе соmmіttеd tо customer satisfaction wіth quality аrtіѕtrу.",
+				"Our prices are clear and upfront, there will be no surprises after you have ordered the services.",
+				"We will hеlр fіx a glitch before it bесоmеѕ a disaster. We саn hеlр уоu mаkе thе nесеѕѕаrу rераіr аll wіthіn your budgеt.",
+				"You can count on us, we hаvе bееn helping families for over a decade with plumbing and related services."]
+			each val,ind in title
+				main
+					img(src="/images/ico/" + ind + ".jpg")
+					div
+						h6=val
+						p=content[ind]
+		img(src="/images/about/manScar.jpg")#car-xs
+
+div#feedback
+	article
+		h5= "What Our Clients Said?"
+	div#feedbacks-wr(ng-controller="ReviewsCtrl" ng-init="reviews = getRand(3)")
+		div.respounce-block(ng-repeat="item in reviews" title="{{item.content}}")
+			div.respounce-quote
+				a.fa.fa-quote-left
+				p.respounce="{{item.content | characters:150: true}}"
+
+			p.author
+				b(ng-bind="item.author + ', '")
+				text(ng-bind="item.location")
+div#CallNow
+	div
+		article
+			h4= "Need An Experienced Los Angeles Plumber?"
+			p
+				text= "Call us at"
+				b= " 818-344-1111 "
+				text= "or"
+				span= " contact us "
+				text= "to set up a free in-home estimate"
+		a.unstyled(href="tel:+18183441111")
+			div.nohov="CALL US NOW!"
+			div.hov="818-344-1111"
+	img(src="/images/gaechnkl006.png")

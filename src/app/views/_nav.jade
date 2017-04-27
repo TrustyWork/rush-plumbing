@@ -1,0 +1,2 @@
+nav(ng-controller="ServicesNavCtrl")
+    a.unstyled(ng-repeat="(name, href) in links" ng-href="{{href}}")= "{{name}}"

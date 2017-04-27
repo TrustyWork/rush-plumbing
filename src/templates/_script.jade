@@ -1,0 +1,69 @@
+script.
+    //You are in html, Babel is not in html
+
+    //preloader
+    (function (window) {
+
+        var style = document.documentElement.style
+        document.querySelector('#preloader').classList.toggle('hidden', false);
+
+        if (!(('flexWrap' in style) || ('WebkitFlexWrap' in style) || ('msFlexWrap' in style))) {
+            alert('Your browser is out of date, correct display of the site can not be guaranteed');
+
+            setTimeout( function(){
+                document.querySelector('#preloader').classList.toggle('hidden', true);
+                angular.bootstrap(document, ['app']);
+            }, 500);
+        } else {
+
+            var timeoutInit = null;
+
+            var init = function(){
+
+                clearTimeout( timeoutInit);
+
+                angular.bootstrap(document, ['app']);
+
+                var images = document.querySelectorAll('img')
+
+                var imageCount = Object.keys(images).length
+                    ,complete = 0;
+
+                var applyComplete = function () {
+                    complete++;
+                    if (imageCount != complete) {
+                        return;
+                    }
+
+                    document.querySelector('#preloader').classList.toggle('hidden', true);
+                }
+
+                for (var idx in images) {
+                    if (!images.hasOwnProperty(idx)) continue;
+
+                    var el = images[idx];
+                    //bg or image
+                    if (el.tagName != "IMG") {
+                        applyComplete() //bug?
+                        continue;
+                    }
+                    var src = el.src;
+
+                    var image = new Image;
+
+                    image.onload = applyComplete();
+                    image.onerror = applyComplete();
+
+                    image.src = src;
+                }
+            }
+
+            window.addEventListener( 'load', init);
+            timeoutInit = setTimeout( init, 1500);
+        }
+    })(window);
+
+script(src = 'https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.9/angular.min.js')
+script(src = 'https://cdnjs.cloudflare.com/ajax/libs/angular-truncate/0.1.2/truncate.min.js')
+script(src = 'https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.9/angular-route.min.js')
+script(src = '/app/all.js')

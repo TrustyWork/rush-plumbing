@@ -1,0 +1,25 @@
+main#semiIntroBox
+    include _menu-common.jade
+
+article#suportInfo
+    div#position
+        p
+            a.unstyled(href="/#!/")= "Home"
+        i.fa.fa-angle-right
+        p
+            a.unstyled(href="/#!/Blog")= "Blog"
+        i.fa.fa-angle-right
+        p
+            a.unstyled(ng-href="/#!/Blog/{{id}}")= "{{link_title}}"
+    div#content
+        h2.
+            {{title}}
+        p.about.
+            {{about}}
+        div(ng-include="template")
+        div#CallUsNow
+            p
+                text= "Call us at "
+                a.unstyled(href="tel:+18183441111")
+                    b="1-818-344-1111"
+                text= " to contact us to set up a free in-home estimate"

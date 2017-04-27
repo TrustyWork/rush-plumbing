@@ -1,0 +1,259 @@
+body > header {
+
+	.small-menu {
+		display: none;
+
+		width: 100%;
+		padding: 3.5rem 0;
+
+		font-family: "Proxima Nova Regular";
+
+		font-size: 4rem;
+		background: linear-gradient(to right, #072753, #004394);
+		a {
+			padding: 3.5rem 0;
+			cursor: pointer;
+			text-decoration: none;
+			color: rgb(255, 255, 255);
+			width: 100%;
+			text-align: center;
+		}
+	}
+
+	.active{
+		@include dflex();
+	}
+
+	width: 100%;
+
+	& > header {
+		margin-top: 1.9rem;
+		margin-left: 2rem;
+
+		@include dflex(r, sb, c);
+		width: 81rem;
+
+		img {
+			height: 2.95rem;
+		}
+
+		nav {
+			@include dflex(r, c, c);
+
+			a {
+				font-family: "Proxima Nova Regular";
+				color: #{map_get( $colors, "dark-blue")};
+				font-size: 0.75rem;
+				margin: 0 1.35rem;
+				text-decoration: none;
+				padding: 1rem 0;
+
+				&:hover {
+					cursor: pointer;
+					text-decoration: underline;
+				}
+			}
+		}
+		div {
+			i.fa.fa-bars {
+				display: none;
+			}
+		}
+
+		@media (min-device-width: 0px) and (max-device-width: $xs-adapt - 1) {
+
+			width: 100%;
+			margin-top: 0rem;
+			margin-left: 0rem;
+
+			@include dflex(c, s, c);
+
+			img {
+				height: 22rem;
+				margin: 8rem 0;
+			}
+
+			nav {
+				display: none;
+			}
+
+			div {
+				@include dflex(r, e, c);
+				width: 100%;
+				aside.callingIn {
+					height: 15rem;
+					width: 100%;
+
+					background-color: rgb(243, 243, 243);
+					@include dflex(r, s, c);
+					font-size: 4.8rem;
+					color: rgb(15, 152, 233);
+
+					a {
+						@include dflex(r, s, c);
+						height: 100%;
+						width: 100%;
+
+						i.fa {
+							margin-left: 10rem;
+						}
+						p {
+							font-family: "Proxima Nova Bold";
+							color: rgb(9, 87, 150);
+							font-size: 4.2rem;
+							letter-spacing: 0.2rem;
+							padding: 0 0.8rem;
+						}
+					}
+				}
+				i.fa.fa-bars {
+					height: 15rem;
+					width: 15rem;
+					@include dflex();
+					font-size: 4.5rem;
+					color: rgb(255, 255, 255);
+					background: linear-gradient(to right, rgb(7, 39, 83), rgb(0, 67, 148));
+				}
+				i.fa.fa-bars.active {
+					background: linear-gradient(to bottom, rgb(7, 39, 83), rgb(0, 67, 148));
+				}
+			}
+		}
+		@media (min-device-width: $xs-adapt) and (max-device-width: $s-adapt - 1) {
+			margin-top: 1.9rem;
+			margin-left: 2rem;
+
+			@include dflex(r, sb, c);
+			width: 98%;
+
+			img {
+				height: 10rem;
+			}
+
+			nav {
+				@include dflex(r, c, c);
+				flex-wrap: wrap;
+				width: 50%;
+				a {
+					font-family: "Proxima Nova Regular";
+					color: rgb(7, 39, 83);
+					font-size: 2rem;
+					margin: 0 1.35rem;
+				}
+			}
+			div {
+				i.fa.fa-bars {
+					display: none;
+				}
+			}
+		}
+		@media (min-device-width: $s-adapt) and (max-device-width: $m-adapt - 1) {
+			margin-top: 1.9rem;
+			margin-left: 2rem;
+
+			@include dflex(r, sb, c);
+			width: 95%;
+
+			img {
+				height: 7.2rem;
+			}
+
+			nav {
+				@include dflex(r, c, c);
+				flex-wrap: wrap;
+				width: 50%;
+				a {
+					font-family: "Proxima Nova Regular";
+					color: rgb(7, 39, 83);
+					font-size: 1.4rem;
+					margin: 1rem 1.35rem;
+				}
+			}
+			div {
+				i.fa.fa-bars {
+					display: none;
+				}
+			}
+		}
+		@media (min-device-width: $m-adapt) and (max-device-width: $l-adapt - 1) {
+
+			margin-top: 1.9rem;
+			margin-left: 2rem;
+
+			@include dflex(r, sb, c);
+			width: 95%;
+
+			img {
+				height: 4.6rem;
+			}
+
+			nav {
+				@include dflex(r, c, c);
+				flex-wrap: wrap;
+				width: 70%;
+				a {
+					font-family: "Proxima Nova Regular";
+					color: rgb(7, 39, 83);
+					font-size: 1.48rem;
+					margin: 1rem 1.5rem;
+				}
+			}
+			div {
+				i.fa.fa-bars {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+aside.callingIn {
+	@include dflex(r, c, c);
+	font-size: 0.9rem;
+	color: rgb(15, 152, 233);
+	p {
+		font-family: "Proxima Nova Bold";
+		color: rgb(9, 87, 150);
+		font-size: 1.14rem;
+		letter-spacing: 0.1rem;
+		margin: 0 0.8rem;
+	}
+
+
+	@media (min-device-width: $xs-adapt) and (max-device-width: $s-adapt - 1) {
+		@include dflex(r, c, c);
+		font-size: 2.4rem;
+		color: rgb(15, 152, 233);
+		p {
+			font-family: "Proxima Nova Bold";
+			color: rgb(9, 87, 150);
+			font-size: 2.8rem;
+			letter-spacing: 0.1rem;
+			margin: 0 0.8rem;
+		}
+	}
+	@media (min-device-width: $s-adapt) and (max-device-width: $m-adapt - 1) {
+		@include dflex(r, c, c);
+		font-size: 2.4rem;
+		color: rgb(15, 152, 233);
+		p {
+			font-family: "Proxima Nova Bold";
+			color: rgb(9, 87, 150);
+			font-size: 2.8rem;
+			letter-spacing: 0.1rem;
+			margin: 0 0.8rem;
+		}
+	}
+	@media (min-device-width: $m-adapt) and (max-device-width: $l-adapt - 1) {
+		@include dflex(r, c, c);
+		font-size: 1.5rem;
+		color: rgb(15, 152, 233);
+		p {
+			font-family: "Proxima Nova Bold";
+			color: rgb(9, 87, 150);
+			font-size: 1.8rem;
+			letter-spacing: 0.1rem;
+			margin: 0 0.8rem;
+		}
+	}
+}

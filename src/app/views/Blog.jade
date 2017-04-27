@@ -1,0 +1,31 @@
+main#semiIntroBox
+    include _menu-common.jade
+
+article#suportInfo
+    div#position
+        p
+            a.unstyled(href="/#!/")= "Home"
+        i.fa.fa-angle-right
+        p
+            a.unstyled(href="/#!/Blog")= "BLOG"
+    div#content
+        h2= "Plumber Tips & Tricks blog"
+
+
+div.blog-slides
+    a.unstyled(ng-href="/#!/Blog/{{post.id}}" ng-repeat='post in posts')
+        img(ng-src='{{post.image}}')
+        h6='{{post.title}}'
+        p='{{post.about | characters:250: true}}'
+        p='{{post.created}}'
+nav#pages
+    button
+        i.fa.fa-angle-left
+        text= "PREV"
+    div
+        a(href="/#!/Blog?p=1")= 1
+        a(href="/#!/Blog?p=2")= 2
+        a(href="/#!/Blog?p=3")= 3
+    button
+        text= "NEXT"
+        i.fa.fa-angle-right
