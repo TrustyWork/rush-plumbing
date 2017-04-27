@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f5a41fbb-652f-45ca-ba0c-b24f8979944a" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/all.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/AboutUs.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/Blog.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/CommercialPlumbing.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/ContactUs.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/PlumberProblems.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/Post.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/ResidentialPlubming.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/Reviews.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/_menu-common.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/_nav.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/informations/Careers.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/informations/Certification.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/informations/FAQ.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/informations/OurCompany.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/posts/1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/posts/2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/posts/3.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/services/DrainCleaning.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/services/EmergencyPlubming.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/services/FaucetsFixtures.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/services/GassShutoffValve.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/services/SewerServices.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/services/TrenchlessSewer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/services/WaterHeaters.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/ProximaNovaBold.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/ProximaNovaLight.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/ProximaNovaRegular.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/PBlog.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/PProblems.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/PService.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/about/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/about/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/about/3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/about/4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/about/manScar.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/articleVideo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/backgr.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/gaechnkl006.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/ico/0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/ico/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/ico/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/ico/3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/list.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/loading.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/man.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/nav_block_xs/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/nav_block_xs/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/nav_block_xs/3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/nav_block_xs/4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/nav_block_xs/5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/plumb_backgr.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/plumbingProblems.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/source/Depositphotos_37437235_original-cropped.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/source/Emergency-Plumbing-Problems.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/source/Sewer-Camera-Inspection-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/source/drain.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/table/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/table/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/table/3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/table/4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/table/5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/table/6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/table/7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/table/8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/table/9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/main.css" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gulpfile.js" afterPath="$PROJECT_DIR$/src/gulpfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/src/app/AboutUsPage/_module.js" afterPath="$PROJECT_DIR$/src/src/app/AboutUsPage/_module.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/src/app/ArticlesPage/_module.js" afterPath="$PROJECT_DIR$/src/src/app/ArticlesPage/_module.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/src/app/BlogPage/_module.js" afterPath="$PROJECT_DIR$/src/src/app/BlogPage/_module.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/src/app/CommercialPlumbingPage/_module.js" afterPath="$PROJECT_DIR$/src/src/app/CommercialPlumbingPage/_module.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/src/app/ContactUsPage/_module.js" afterPath="$PROJECT_DIR$/src/src/app/ContactUsPage/_module.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/src/app/IndexPage/_module.js" afterPath="$PROJECT_DIR$/src/src/app/IndexPage/_module.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/src/app/PlumbingProblemsPage/_module.js" afterPath="$PROJECT_DIR$/src/src/app/PlumbingProblemsPage/_module.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/src/app/ResidentialPlumbingPage/_module.js" afterPath="$PROJECT_DIR$/src/src/app/ResidentialPlumbingPage/_module.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/src/app/ReviewsPage/_module.js" afterPath="$PROJECT_DIR$/src/src/app/ReviewsPage/_module.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/src/app/services/Blog.js" afterPath="$PROJECT_DIR$/src/src/app/services/Blog.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/src/app/services/InformationsNav.js" afterPath="$PROJECT_DIR$/src/src/app/services/InformationsNav.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/src/app/services/ServicesNav.js" afterPath="$PROJECT_DIR$/src/src/app/services/ServicesNav.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/src/app/services/SiteNav.js" afterPath="$PROJECT_DIR$/src/src/app/services/SiteNav.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/src/app/views/AboutUs.jade" afterPath="$PROJECT_DIR$/src/src/app/views/AboutUs.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/src/app/views/Blog.jade" afterPath="$PROJECT_DIR$/src/src/app/views/Blog.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/src/app/views/CommercialPlumbing.jade" afterPath="$PROJECT_DIR$/src/src/app/views/CommercialPlumbing.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/src/app/views/ContactUs.jade" afterPath="$PROJECT_DIR$/src/src/app/views/ContactUs.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/src/app/views/PlumberProblems.jade" afterPath="$PROJECT_DIR$/src/src/app/views/PlumberProblems.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/src/app/views/Post.jade" afterPath="$PROJECT_DIR$/src/src/app/views/Post.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/src/app/views/ResidentialPlubming.jade" afterPath="$PROJECT_DIR$/src/src/app/views/ResidentialPlubming.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/src/app/views/Reviews.jade" afterPath="$PROJECT_DIR$/src/src/app/views/Reviews.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/src/app/views/index.jade" afterPath="$PROJECT_DIR$/src/src/app/views/index.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/src/app/views/informations/Careers.jade" afterPath="$PROJECT_DIR$/src/src/app/views/informations/Careers.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/src/app/views/informations/Certification.jade" afterPath="$PROJECT_DIR$/src/src/app/views/informations/Certification.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/src/app/views/informations/FAQ.jade" afterPath="$PROJECT_DIR$/src/src/app/views/informations/FAQ.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/src/app/views/informations/OurCompany.jade" afterPath="$PROJECT_DIR$/src/src/app/views/informations/OurCompany.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/src/app/views/services/DrainCleaning.jade" afterPath="$PROJECT_DIR$/src/src/app/views/services/DrainCleaning.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/src/app/views/services/EmergencyPlubming.jade" afterPath="$PROJECT_DIR$/src/src/app/views/services/EmergencyPlubming.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/src/app/views/services/FaucetsFixtures.jade" afterPath="$PROJECT_DIR$/src/src/app/views/services/FaucetsFixtures.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/src/app/views/services/GassShutoffValve.jade" afterPath="$PROJECT_DIR$/src/src/app/views/services/GassShutoffValve.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/src/app/views/services/SewerServices.jade" afterPath="$PROJECT_DIR$/src/src/app/views/services/SewerServices.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/src/app/views/services/TrenchlessSewer.jade" afterPath="$PROJECT_DIR$/src/src/app/views/services/TrenchlessSewer.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/src/app/views/services/WaterHeaters.jade" afterPath="$PROJECT_DIR$/src/src/app/views/services/WaterHeaters.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/src/styles/block/navBlock.scss" afterPath="$PROJECT_DIR$/src/src/styles/block/navBlock.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/src/styles/supp/fonts.scss" afterPath="$PROJECT_DIR$/src/src/styles/supp/fonts.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/src/templates/_header.jade" afterPath="$PROJECT_DIR$/src/src/templates/_header.jade" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/gulpfile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="500">
+              <caret line="62" column="38" lean-forward="false" selection-start-line="62" selection-start-column="38" selection-end-line="62" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>=&quot;/</find>
+      <find>images/list.png</find>
+      <find>&quot;/</find>
+      <find>&quot;./</find>
+      <find>'/app</find>
+      <find>&quot;./#</find>
+      <find>/#</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>=&quot;./</replace>
+      <replace>&quot;./</replace>
+      <replace>&quot;../</replace>
+      <replace>'./app</replace>
+      <replace>&quot;#</replace>
+      <replace>#</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>D:\git_rep\rush-plumbing\src\src\styles</dir>
+      <dir>D:\git_rep\rush-plumbing\src\src\app</dir>
+      <dir>D:\git_rep\rush-plumbing\src\src</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/src/app/views/AboutUs.jade" />
+        <option value="$PROJECT_DIR$/src/src/styles/block/callNow.scss" />
+        <option value="$PROJECT_DIR$/src/src/styles/block/footer.scss" />
+        <option value="$PROJECT_DIR$/src/src/styles/block/inputBlock.scss" />
+        <option value="$PROJECT_DIR$/src/src/styles/supp/fonts.scss" />
+        <option value="$PROJECT_DIR$/src/src/app/AboutUsPage/_module.js" />
+        <option value="$PROJECT_DIR$/src/src/app/BlogPage/_module.js" />
+        <option value="$PROJECT_DIR$/src/src/app/CommercialPlumbingPage/_module.js" />
+        <option value="$PROJECT_DIR$/src/src/app/ContactUsPage/_module.js" />
+        <option value="$PROJECT_DIR$/src/src/app/IndexPage/_module.js" />
+        <option value="$PROJECT_DIR$/src/src/app/PlumbingProblemsPage/_module.js" />
+        <option value="$PROJECT_DIR$/src/src/app/ResidentialPlumbingPage/_module.js" />
+        <option value="$PROJECT_DIR$/src/src/app/ReviewsPage/_module.js" />
+        <option value="$PROJECT_DIR$/src/src/app/services/Blog.js" />
+        <option value="$PROJECT_DIR$/src/src/app/ArticlesPage/_module.js" />
+        <option value="$PROJECT_DIR$/src/src/app/services/SiteNav.js" />
+        <option value="$PROJECT_DIR$/src/src/styles/block/navBlock.scss" />
+        <option value="$PROJECT_DIR$/src/gulpfile.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/src/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/src/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="width" value="1920" />
+    <option name="height" value="1040" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rush-plumbing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rush-plumbing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+  </component>
+  <component name="RunManager">
+    <configuration default="false" name="serv" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/src/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="serv" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="npm.serv" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="npm.serv" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f5a41fbb-652f-45ca-ba0c-b24f8979944a" name="Default" comment="" />
+      <created>1493307755196</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1493307755196</updated>
+      <workItem from="1493307756453" duration="901000" />
+      <workItem from="1493325084239" duration="1820000" />
+      <workItem from="1493326916246" duration="1027000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3748000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1920" height="1040" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973433" sideWeight="0.48440066" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973433" sideWeight="0.51559937" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/src/app/views/services/DrainCleaning.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="28" lean-forward="false" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/app/ArticlesPage/_module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/styles/block/footer.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1925">
+          <caret line="77" column="27" lean-forward="false" selection-start-line="77" selection-start-column="24" selection-end-line="77" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/app/ArticlesPage/_module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/app/views/AboutUs.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="27" lean-forward="false" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/styles/block/callNow.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="143" column="20" lean-forward="false" selection-start-line="143" selection-start-column="20" selection-end-line="143" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/styles/block/footer.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="551" column="26" lean-forward="false" selection-start-line="551" selection-start-column="26" selection-end-line="551" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/styles/block/inputBlock.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-255">
+          <caret line="299" column="17" lean-forward="false" selection-start-line="299" selection-start-column="17" selection-end-line="299" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/styles/supp/fonts.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="15" lean-forward="false" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-294">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/app/AboutUsPage/_module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="19" lean-forward="false" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/app/BlogPage/_module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="8" column="25" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/app/CommercialPlumbingPage/_module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="19" lean-forward="false" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/app/ContactUsPage/_module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/app/IndexPage/_module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/app/PlumbingProblemsPage/_module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="19" lean-forward="false" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/app/ResidentialPlumbingPage/_module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="19" lean-forward="false" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/app/ReviewsPage/_module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/app/services/Blog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="23" column="25" lean-forward="false" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/app/views/_nav.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/app/services/SiteNav.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/styles/block/navBlock.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="120" column="67" lean-forward="false" selection-start-line="120" selection-start-column="67" selection-end-line="120" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/styles/supp/fa/_core.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="50" lean-forward="false" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/styles/supp/fa/_mixins.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-978">
+          <caret line="5" column="50" lean-forward="false" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/app/views/services/DrainCleaning.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-435">
+          <caret line="6" column="28" lean-forward="false" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/app/ArticlesPage/_module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="30" lean-forward="false" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/_nav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="62" column="38" lean-forward="false" selection-start-line="62" selection-start-column="38" selection-end-line="62" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

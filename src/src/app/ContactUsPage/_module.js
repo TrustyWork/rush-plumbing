@@ -1,7 +1,7 @@
 angular.module('app.ContactUsPage', ['ngRoute'])
 	.config(['$routeProvider', function ($routeProvider) {
 		$routeProvider.when('/ContactUs', {
-			templateUrl: '/app/views/ContactUs.html'
+			templateUrl: './app/views/ContactUs.html'
 			,controller: 'app.ContactUsPage.PageCtrl'
 		});
 	}])

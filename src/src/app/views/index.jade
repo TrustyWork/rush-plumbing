@@ -27,11 +27,11 @@ nav#navBlock(ng-controller="ServicesNavCtrl")
 		"A blocked drain and sewer pipes is very uninviting and can be a huge headache all throughout its existence.",
 		"Commercial plumbing is not just imperative to keep the condition of a certain building or structure, but it is also compulsory for the regulations of the state.",
 		"When the bathtub or the sink stop draining and the toilets are not flushing, homeowners would be very alarmed and feel the need for emergency plumbing services."]
-		var links = ["./#!/PlumberProblems",
-		"./#!/Services/SewerServices",
-		"./#!/Services/DrainCleaning",
-		"./#!/CommercialPlumbing",
-		"./#!/Services/EmergencyPlubming"]
+		var links = ["#!/PlumberProblems",
+		"#!/Services/SewerServices",
+		"#!/Services/DrainCleaning",
+		"#!/CommercialPlumbing",
+		"#!/Services/EmergencyPlubming"]
 	each val,ind in title
 		a(href=links[ind]).unstyled
 			div.bg
@@ -88,10 +88,10 @@ div#feedback
 div#aboutBlog
 	div
 		h5
-			a.unstyled( href="./#!/Blog")
+			a.unstyled( href="#!/Blog")
 				| In our Blog we always have some helpful pipes & drains tips for you and your plumbing!
 		div.blogItemsBlock
-			a.unstyled.blogItem(ng-href="./#!/Blog/{{post.id}}" ng-repeat='post in blogPosts')
+			a.unstyled.blogItem(ng-href="#!/Blog/{{post.id}}" ng-repeat='post in blogPosts')
 				h6.theme='{{post.title}}'
 				p.content='{{post.about | characters:150: true}}'
 				p.date='{{post.created}}'

@@ -1,7 +1,7 @@
 angular.module('app.ReviewsPage', ['ngRoute'])
 	.config(['$routeProvider', function ($routeProvider) {
 		$routeProvider.when('/Reviews', {
-			templateUrl: '/app/views/Reviews.html'
+			templateUrl: './app/views/Reviews.html'
 			,controller: 'app.ReviewsPage.PageCtrl'
 		});
 	}])

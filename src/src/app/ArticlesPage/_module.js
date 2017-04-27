@@ -2,23 +2,23 @@ angular.module('app.ArticlesPage', ['ngRoute'])
 	.config(['$routeProvider', function ($routeProvider) {
 		//Services ServicesNav & InformationsNav PIKE
 		var ServicesNav = {
-			"Drain Cleaning": "./#!/Services/DrainCleaning"
-			,"Emergency Plubming": "./#!/Services/EmergencyPlubming"
-			,"Sewer Services": "./#!/Services/SewerServices"
-			,"Trenchless Sewer": "./#!/Services/TrenchlessSewer"
-			,"Gass Shut off Valve": "./#!/Services/GassShutoffValve"
-			,"Faucets & Fixtures": "./#!/Services/FaucetsFixtures"
-			,"Water Heaters": "./#!/Services/WaterHeaters"
+			"Drain Cleaning": "#!/Services/DrainCleaning"
+			,"Emergency Plubming": "#!/Services/EmergencyPlubming"
+			,"Sewer Services": "#!/Services/SewerServices"
+			,"Trenchless Sewer": "#!/Services/TrenchlessSewer"
+			,"Gass Shut off Valve": "#!/Services/GassShutoffValve"
+			,"Faucets & Fixtures": "#!/Services/FaucetsFixtures"
+			,"Water Heaters": "#!/Services/WaterHeaters"
 		}
 
 		var InformationsNav = {
-			"Our Company": "./#!/Informations/OurCompany"
-			,"Careers": "./#!/Informations/Careers"
-			,"Certification": "./#!/Informations/Certification"
-			,"Blog": "./#!/Blog"
-			,"Reviews": "./#!/Reviews"
-			,"FAQ": "./#!/Informations/FAQ"
-			,"Contact us": "./#!/ContactUs"
+			"Our Company": "#!/Informations/OurCompany"
+			,"Careers": "#!/Informations/Careers"
+			,"Certification": "#!/Informations/Certification"
+			,"Blog": "#!/Blog"
+			,"Reviews": "#!/Reviews"
+			,"FAQ": "#!/Informations/FAQ"
+			,"Contact us": "#!/ContactUs"
 		}
 
 		var categories = {
@@ -38,7 +38,7 @@ angular.module('app.ArticlesPage', ['ngRoute'])
 				}
 
 				var link = '/' + capitalizeFirstLetter( category) + `/${name}`;
-				var templateUrl = '/app/views/' + category.toLowerCase() + `/${name}.html`;
+				var templateUrl = './app/views/' + category.toLowerCase() + `/${name}.html`;
 
 				$routeProvider.when( link, {
 					templateUrl: templateUrl

@@ -118,7 +118,7 @@ nav#navBlock {
 			@each $ind in $list {
 				&:nth-of-type(#{$ind}) {
 
-					//background-image: url("../images/nav_block_xs/#{$ind}.jpg");
+					//background-image: url("../images/nav_block_xs#{$ind}.jpg");
 					background-repeat: no-repeat;
 					background-size: 100% auto ;
 

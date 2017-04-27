@@ -2,7 +2,7 @@ angular.module('app.IndexPage', ['ngRoute'])
 
 	.config(['$routeProvider', function ($routeProvider) {
 		$routeProvider.when('/', {
-			templateUrl: '/app/views/index.html'
+			templateUrl: './app/views/index.html'
 			,controller: 'app.IndexPage.PageCtrl'
 		});
 	}])

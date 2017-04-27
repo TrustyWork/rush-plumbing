@@ -1,3 +1,5 @@
+var path = require("path");
+
 var gulp = require("gulp"),
     jade = require("gulp-jade"),
 // browserify дает возможность исспользовать require() в фронт-скриптах
@@ -45,7 +47,7 @@ var angular= true;
 
 
 gulp.task("jade", function () {
-    gulp.src(inputDir + "/templates/**/*.jade")
+    gulp.src(inputDir + "/templates/**/[^_]*.jade")
         .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
         .pipe(jade())
         .pipe(htmlmin({
@@ -58,7 +60,7 @@ gulp.task("jade", function () {
 })
 
 gulp.task("angular-jade", function () {
-    gulp.src( inputDir + "/app/**/*.jade")
+    gulp.src( inputDir + "/app/**/[^_]*.jade")
         .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
         .pipe(jade())
         .pipe(htmlmin({
@@ -66,22 +68,22 @@ gulp.task("angular-jade", function () {
             minifyCSS: true,
             minifyJS: true
         }))
-        .pipe(gulp.dest(outputDir + "/app"))
+        .pipe(gulp.dest( outputDir + "/app"))
         .pipe(connect.reload());
 })
 
 gulp.task("js", function () {
-    gulp.src(inputDir + "/js/**/*.js")
+    gulp.src( inputDir + "/js/**/*.js")
         .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
         .pipe(browserify({debug: env === "d"}))
         .pipe(gulpif(env === "p", uglify()))
-        .pipe(gulp.dest(outputDir + "/js"))
+        .pipe(gulp.dest( outputDir + "/js"))
         .pipe(connect.reload());
 })
 
 gulp.task("angular-js", function () {
     gulp.src([
-            inputDir + "/app/before.js"
+	        inputDir + "/app/before.js"
             //,inputDir + "/app/vendor/angular/angular.min.js"
             //,inputDir + "/app/vendor/angular/angular-route.min.js"
             //,inputDir + "/app/vendor/angular/angular-truncate.js"
@@ -186,7 +188,7 @@ gulp.task("watch", function () {
 //  определяем свойства модуля connect
 gulp.task("connect", function () {
     connect.server({
-        root: [outputDir],
+        root: [ outputDir],
         port: 9000,
         livereload: true
     })

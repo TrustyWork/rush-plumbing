@@ -1,12 +1,12 @@
 angular.module('app.BlogPage', ['ngRoute'])
     .config(['$routeProvider', function($routeProvider) {
         $routeProvider.when('/Blog', {
-            templateUrl: '/app/views/Blog.html'
+            templateUrl: './app/views/Blog.html'
             ,controller: 'app.BlogPage.ListCtrl'
         });
 
         $routeProvider.when('/Blog/:id', {
-            templateUrl: '/app/views/Post.html'
+            templateUrl: './app/views/Post.html'
             ,controller: 'app.BlogPage.PostCtrl'
         });
     }])
