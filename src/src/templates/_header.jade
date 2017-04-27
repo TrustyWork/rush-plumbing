@@ -1,7 +1,7 @@
 header(ng-controller="MenuSwitcherCtrl")
     header(ng-controller="SiteNavCtrl")
         a(href="/#!/")
-            img(src="/images/logo.png")
+            img(src="images/logo.png")
         nav
             a(ng-repeat="(name, href) in links" ng-href="{{href}}")= "{{name}}"
         div
