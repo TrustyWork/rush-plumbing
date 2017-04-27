@@ -4,10 +4,10 @@ main#semiIntroBox
 article#suportInfo
 	div#position
 		p
-			a.unstyled(href="/#!/")= "Home"
+			a.unstyled(href="./#!/")= "Home"
 		i.fa.fa-angle-right
 		p
-			a.unstyled(href="/#!/AboutUs")= "ABOUT US"
+			a.unstyled(href="./#!/AboutUs")= "ABOUT US"
 	div#content
 		h2= "About us"
 
@@ -37,11 +37,11 @@ div#aboutUsBlock
 			-var i=0
 			while i<4
 				-i++
-				img(src="/images/about/"+i+".jpg")
+				img(src="./images/about/"+i+".jpg")
 
 div.manAndCar
 	div
-		img(src="/images/about/manScar.jpg")#car
+		img(src="./images/about/manScar.jpg")#car
 		content
 			-
 				var title = ["24/7 AVAILALITY", "NO HIDDEN COST", "AFFORDABLE PRICES", "CERTIFIED MECHANICS"]
@@ -51,11 +51,11 @@ div.manAndCar
 				"You can count on us, we hаvе bееn helping families for over a decade with plumbing and related services."]
 			each val,ind in title
 				main
-					img(src="/images/ico/" + ind + ".jpg")
+					img(src="./images/ico/" + ind + ".jpg")
 					div
 						h6=val
 						p=content[ind]
-		img(src="/images/about/manScar.jpg")#car-xs
+		img(src="./images/about/manScar.jpg")#car-xs
 
 div#feedback
 	article
@@ -82,4 +82,4 @@ div#CallNow
 		a.unstyled(href="tel:+18183441111")
 			div.nohov="CALL US NOW!"
 			div.hov="818-344-1111"
-	img(src="/images/gaechnkl006.png")
+	img(src="./images/gaechnkl006.png")

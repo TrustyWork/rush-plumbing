@@ -4,7 +4,7 @@ main#semiIntroBox
 article#suportInfo
     div#position
         p
-            a.unstyled(href="/#!/")= "Home"
+            a.unstyled(href="./#!/")= "Home"
         i.fa.fa-angle-right
         p
             a.unstyled(href="#")= "REVIEWS"
@@ -31,7 +31,7 @@ div#feedbackPage
                     span="*"
                 textarea#input-id-testimonial(ng-model="testimonial.content" type="text" required="required" style="background-repeat: repeat; background-image: none; background-position: 0% 0%;")
             button(type="submit" style="float:right" ng-click="add(testimonial)")="Send message"
-        img(ng-class="{'ng-cloak': processTestimonial != 2}" src="/images/loading.svg")
+        img(ng-class="{'ng-cloak': processTestimonial != 2}" src="./images/loading.svg")
         //p.
         //    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolore
         //    que laudantium, totam rem aperiam

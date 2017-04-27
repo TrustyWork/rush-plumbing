@@ -71,7 +71,7 @@ div#CallNow
 		a.unstyled(href="tel:+18183441111")
 			div.nohov="CALL US NOW!"
 			div.hov="818-344-1111"
-	img(src="/images/gaechnkl006.png")
+	img(src="./images/gaechnkl006.png")
 div#feedback
 	article
 		h5= "What Our Clients Said?"
@@ -88,10 +88,10 @@ div#feedback
 div#aboutBlog
 	div
 		h5
-			a.unstyled( href="/#!/Blog")
+			a.unstyled( href="./#!/Blog")
 				| In our Blog we always have some helpful pipes & drains tips for you and your plumbing!
 		div.blogItemsBlock
-			a.unstyled.blogItem(ng-href="/#!/Blog/{{post.id}}" ng-repeat='post in blogPosts')
+			a.unstyled.blogItem(ng-href="./#!/Blog/{{post.id}}" ng-repeat='post in blogPosts')
 				h6.theme='{{post.title}}'
 				p.content='{{post.about | characters:150: true}}'
 				p.date='{{post.created}}'

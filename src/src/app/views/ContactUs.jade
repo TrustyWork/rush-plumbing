@@ -4,7 +4,7 @@ main#semiIntroBox
 article#suportInfo
     div#position
         p
-            a.unstyled(href="/#!/")= "Home"
+            a.unstyled(href="./#!/")= "Home"
         i.fa.fa-angle-right
         p
             a.unstyled(href="#")= "CONTACT US"
@@ -41,6 +41,6 @@ article#suportInfo
                 textarea#input-id-5(ng-model="message.content" type="text" required="required" style="background-repeat: repeat; background-image: none; background-position: 0% 0%;")
             input(type="submit" value="Send message" ng-click="send(message)")
         div.text-center.w-100per(ng-class="{'ng-cloak': processSend != 1}")
-            img.unsized(src="/images/loading.svg")
+            img.unsized(src="./images/loading.svg")
         p.text-center.w-100per(ng-class="{'ng-cloak': processSend != 2}")
             b= "message send"
