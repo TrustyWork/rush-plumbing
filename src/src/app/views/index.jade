@@ -27,18 +27,18 @@ nav#navBlock(ng-controller="ServicesNavCtrl")
 		"A blocked drain and sewer pipes is very uninviting and can be a huge headache all throughout its existence.",
 		"Commercial plumbing is not just imperative to keep the condition of a certain building or structure, but it is also compulsory for the regulations of the state.",
 		"When the bathtub or the sink stop draining and the toilets are not flushing, homeowners would be very alarmed and feel the need for emergency plumbing services."]
-		var links = ["/#!/PlumberProblems",
-		"/#!/Services/SewerServices",
-		"/#!/Services/DrainCleaning",
-		"/#!/CommercialPlumbing",
-		"/#!/Services/EmergencyPlubming"]
+		var links = ["./#!/PlumberProblems",
+		"./#!/Services/SewerServices",
+		"./#!/Services/DrainCleaning",
+		"./#!/CommercialPlumbing",
+		"./#!/Services/EmergencyPlubming"]
 	each val,ind in title
 		a(href=links[ind]).unstyled
 			div.bg
 				h5= val
 				p= context[ind]
 article#plumbingEmergency
-	- var plumbingEmergencyImg = "/images/articleVideo.jpg"
+	- var plumbingEmergencyImg = "./images/articleVideo.jpg"
 	main
 		h4= "Have a Plumbing & Rooter Emergency?"
 		div.video

@@ -118,23 +118,23 @@ nav#navBlock {
 			@each $ind in $list {
 				&:nth-of-type(#{$ind}) {
 
-					//background-image: url("/images/nav_block_xs/#{$ind}.jpg");
+					//background-image: url("../images/nav_block_xs/#{$ind}.jpg");
 					background-repeat: no-repeat;
 					background-size: 100% auto ;
 
 					$image: '';
 					$position: 'top center';
 					@if( $ind == 1) {
-						$image: "/images/plumbingProblems.jpg";
+						$image: "../images/plumbingProblems.jpg";
 						$position: 'center center';
 					} @elseif( $ind == 2) {
-						$image: "/images/source/Depositphotos_37437235_original-cropped.jpg";
+						$image: "../images/source/Depositphotos_37437235_original-cropped.jpg";
 					} @elseif( $ind == 3) {
-						$image: "/images/source/drain.jpg";
+						$image: "../images/source/drain.jpg";
 					} @elseif( $ind == 4) {
-						$image: "/images/source/Emergency-Plumbing-Problems.jpg";
+						$image: "../images/source/Emergency-Plumbing-Problems.jpg";
 					} @elseif( $ind == 5) {
-						$image: "/images/source/Sewer-Camera-Inspection-1.jpg";
+						$image: "../images/source/Sewer-Camera-Inspection-1.jpg";
 					}
 
 					background-image: url("#{$image}");
@@ -251,29 +251,29 @@ nav#navBlock {
 			}
 
 			&:nth-of-type(1) {
-				background-image: url("/images/plumbingProblems.jpg");
+				background-image: url("../images/plumbingProblems.jpg");
 				background-repeat: no-repeat;
 				.bg {
 					background-color: transparent; //need fix image
 				}
 			}
 			&:nth-of-type(2) {
-				background-image: url("/images/source/Depositphotos_37437235_original-cropped.jpg");
+				background-image: url("../images/source/Depositphotos_37437235_original-cropped.jpg");
 				background-size: 190% 100%;
 				background-position: top;
 			}
 			&:nth-of-type(3) {
-				background-image: url("/images/source/drain.jpg");
+				background-image: url("../images/source/drain.jpg");
 				background-size: 130% 100%;
 				background-position: top;
 			}
 			&:nth-of-type(4) {
-				background-image: url("/images/source/Emergency-Plumbing-Problems.jpg");
+				background-image: url("../images/source/Emergency-Plumbing-Problems.jpg");
 				background-size: 160% 100%;
 				background-position: top;
 			}
 			&:nth-of-type(5) {
-				background-image: url("/images/source/Sewer-Camera-Inspection-1.jpg");
+				background-image: url("../images/source/Sewer-Camera-Inspection-1.jpg");
 				background-size: 180% 100%;
 				background-position: top;
 			}
